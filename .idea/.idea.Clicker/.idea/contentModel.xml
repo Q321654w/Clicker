@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\PC\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\PC\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_Clicker.-497635882.00" t="ExcludeRecursive" />
+    <e p="C:\Users\PC\Desktop\Projects\Clicker" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="Common" t="Include">
+            <e p="CustomButton.cs" t="Include" />
+          </e>
+          <e p="Game" t="Include">
+            <e p="Game.cs" t="Include" />
+          </e>
+          <e p="GameUpdate" t="Include">
+            <e p="GameUpdates.cs" t="Include" />
+            <e p="IGameUpdate.cs" t="Include" />
+          </e>
+          <e p="Income" t="Include">
+            <e p="ClickIncome.cs" t="Include" />
+            <e p="MoneyProviders" t="Include">
+              <e p="Facroties" t="Include">
+                <e p="MoneyProviderFactory.cs" t="Include" />
+              </e>
+              <e p="IMoneyProvider.cs" t="Include" />
+              <e p="IUpgrade.cs" t="Include" />
+              <e p="MoneyProvider.cs" t="Include" />
+              <e p="Shops" t="Include">
+                <e p="MoneyProviderShop.cs" t="Include" />
+              </e>
+              <e p="SimpleMoneyProvider.cs" t="Include" />
+              <e p="UpgradableMoneyProvider.cs" t="Include" />
+            </e>
+            <e p="PassiveIncome.cs" t="Include" />
+            <e p="Wallet.cs" t="Include" />
+          </e>
+          <e p="Installers" t="Include">
+            <e p="GameInstaller.cs" t="Include" />
+          </e>
+          <e p="Numbers" t="Include">
+            <e p="Number.cs" t="Include" />
+          </e>
+          <e p="Player" t="Include">
+            <e p="Player.cs" t="Include" />
+            <e p="PlayerInput.cs" t="Include" />
+          </e>
+          <e p="UI" t="Include">
+            <e p="ScoreView.cs" t="Include" />
+            <e p="Ui.cs" t="Include" />
+          </e>
+          <e p="UpgradeShops" t="Include">
+            <e p="UpgradeShop.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Clicker.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\Bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

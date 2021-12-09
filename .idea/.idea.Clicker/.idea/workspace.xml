@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="10fecada-1f0d-4ed6-808a-f8cf1e01246f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Numbers/Number.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameUpdate/GameUpdates.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/UpgradableMoneyProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Income/PassiveIncome.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/Facroties/MoneyProviderFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/IUpgrade.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/IMoneyProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Installers/GameInstaller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Ui.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/SimpleMoneyProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UpgradeShops/UpgradeShop.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Income/ClickIncome.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ScoreView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerInput.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameUpdate/IGameUpdate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/MoneyProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Game.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Income/Wallet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Common/CustomButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/Shops/MoneyProviderShop.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/MoneyCalc.cs" />
+        <option value="$PROJECT_DIR$/Assets/Money.cs" />
+        <option value="$PROJECT_DIR$/Assets/Click.cs" />
+        <option value="$PROJECT_DIR$/Assets/IUpgradable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Cursor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Shop.cs" />
+        <option value="$PROJECT_DIR$/Assets/MoneyProviderType.cs" />
+        <option value="$PROJECT_DIR$/Assets/Product.cs" />
+        <option value="$PROJECT_DIR$/Assets/MoneyProviderCombiner.cs" />
+        <option value="$PROJECT_DIR$/Assets/MoneyProviderUpgradeShop.cs" />
+        <option value="$PROJECT_DIR$/Assets/MoneyProvidersShop.cs" />
+        <option value="$PROJECT_DIR$/Assets/IUpgrade.cs" />
+        <option value="$PROJECT_DIR$/Assets/IMoneyProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/PlayerInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/IGameUpdate.cs" />
+        <option value="$PROJECT_DIR$/Assets/Wallet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Income.cs" />
+        <option value="$PROJECT_DIR$/Assets/UpgradeShop.cs" />
+        <option value="$PROJECT_DIR$/Assets/MoneyProviderConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/MoneyProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/MoneyProviderFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/ShopView.cs" />
+        <option value="$PROJECT_DIR$/Assets/ScoreView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Ui.cs" />
+        <option value="$PROJECT_DIR$/Assets/CustomButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/PassiveIncome.cs" />
+        <option value="$PROJECT_DIR$/Assets/ClickIncome.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game.cs" />
+        <option value="$PROJECT_DIR$/Assets/GameUpdates.cs" />
+        <option value="$PROJECT_DIR$/Assets/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/MoneyProviderTypeNumberPair.cs" />
+        <option value="$PROJECT_DIR$/Assets/MoneyProviderShopConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/GameInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Number.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/Shops/MoneyProviderTypeNumberPair.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UpgradeShops/IUpgradeNumberPair.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UpgradeShops/UpgradeShopConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/IUpgrade.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/IMoneyProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Income/PassiveIncome.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/MoneyProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/SimpleMoneyProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/UpgradableMoneyProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Income/ClickIncome.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/Facroties/MoneyProviderConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UpgradeShops/UpgradeShop.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/Facroties/MoneyProviderFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shop.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/Shops/MoneyProviderShop.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Installers/GameInstaller.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="21XuqI8wmZxm8imCUW3uMHBG91E" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3531961" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.3028169" />
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="413" height="464" key="DebuggerActiveHint" timestamp="1638990777920">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="413" height="464" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1638990777920" />
+    <state width="1877" height="383" key="GridCell.Tab.0.bottom" timestamp="1638997113644">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="383" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1638997113644" />
+    <state width="1877" height="383" key="GridCell.Tab.0.center" timestamp="1638997113644">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="383" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1638997113644" />
+    <state width="1877" height="383" key="GridCell.Tab.0.left" timestamp="1638997113644">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="383" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1638997113644" />
+    <state width="1877" height="383" key="GridCell.Tab.0.right" timestamp="1638997113644">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="383" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1638997113644" />
+    <state width="1877" height="383" key="GridCell.Tab.1.bottom" timestamp="1638997113645">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="383" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1638997113645" />
+    <state width="1877" height="383" key="GridCell.Tab.1.center" timestamp="1638997113645">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="383" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1638997113645" />
+    <state width="1877" height="383" key="GridCell.Tab.1.left" timestamp="1638997113645">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="383" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1638997113645" />
+    <state width="1877" height="383" key="GridCell.Tab.1.right" timestamp="1638997113645">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="383" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1638997113645" />
+    <state width="1877" height="383" key="GridCell.Tab.2.bottom" timestamp="1638997113644">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="383" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1638997113644" />
+    <state width="1877" height="383" key="GridCell.Tab.2.center" timestamp="1638997113644">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="383" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1638997113644" />
+    <state width="1877" height="383" key="GridCell.Tab.2.left" timestamp="1638997113644">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="383" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1638997113644" />
+    <state width="1877" height="383" key="GridCell.Tab.2.right" timestamp="1638997113644">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="383" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1638997113644" />
+    <state width="1877" height="383" key="GridCell.Tab.3.bottom" timestamp="1638997113645">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="383" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1638997113645" />
+    <state width="1877" height="383" key="GridCell.Tab.3.center" timestamp="1638997113645">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="383" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1638997113645" />
+    <state width="1877" height="383" key="GridCell.Tab.3.left" timestamp="1638997113644">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="383" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1638997113644" />
+    <state width="1877" height="383" key="GridCell.Tab.3.right" timestamp="1638997113645">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="383" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1638997113645" />
+    <state x="764" y="221" key="RiderGenerateDialog" timestamp="1639069262935">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="764" y="221" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1639069262935" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1638121521917">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1638121521917" />
+    <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1638988362900">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1638988362900" />
+  </component>
+</project>
