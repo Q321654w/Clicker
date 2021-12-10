@@ -5,6 +5,7 @@ namespace DefaultNamespace
 {
     public class GameInstaller : MonoBehaviour
     {
+        [SerializeField] private MoneyProviderInstaller _moneyProviderInstaller;
         [SerializeField] private GameUpdates _gameUpdates;
         [SerializeField] private ScoreView _scoreViewPrefab;
         [SerializeField] private Canvas _canvasPrefab;
@@ -12,8 +13,14 @@ namespace DefaultNamespace
 
         private void Awake()
         {
-            var providerFactory = CreateMoneyProviderFactory(out var moneyProviders);
-            var moneyProviderShop = CreateMoneyProviderShop(providerFactory, moneyProviders);
+            _moneyProviderInstaller.Install();
+            Install();
+        }
+
+        private void Install()
+        {
+            var providerFactory = CreateMoneyProviderFactory();
+            var moneyProviderShop = CreateMoneyProviderShop(providerFactory);
             var upgradeShop = CreateUpgradeShop();
 
             var wallet = CreateWallet();
@@ -25,15 +32,9 @@ namespace DefaultNamespace
             game.Start();
         }
 
-        private MoneyProviderFactory CreateMoneyProviderFactory(out IMoneyProvider[] moneyProviders)
+        private MoneyProviderFactory CreateMoneyProviderFactory()
         {
-            moneyProviders = new IMoneyProvider[]
-            {
-                new SimpleMoneyProvider(new Number(0, 1)),
-                new SimpleMoneyProvider(new Number(1, 1)),
-                new SimpleMoneyProvider(new Number(2, 1)),
-            };
-
+            var moneyProviders = _moneyProviderInstaller.MoneyProviders;
             return new MoneyProviderFactory(moneyProviders);
         }
 
@@ -63,16 +64,15 @@ namespace DefaultNamespace
 
         private UpgradeShop CreateUpgradeShop()
         {
-            var upgrades = new Dictionary<IUpgrade, Number>()
-            {
-            };
-            return new UpgradeShop(upgrades);
+            var catalog = new Dictionary<int, Number>();
+            var moneyProviders = new Dictionary<int, IUpgrade>();
+            return new UpgradeShop(catalog, moneyProviders);
         }
 
-        private MoneyProviderShop CreateMoneyProviderShop(MoneyProviderFactory factory, IMoneyProvider[] moneyProviders)
+        private MoneyProviderShop CreateMoneyProviderShop(MoneyProviderFactory factory)
         {
-            var products = new Dictionary<IMoneyProvider, Number>();
-            return new MoneyProviderShop(factory, products);
+            var catalog = new Dictionary<int, Number>();
+            return new MoneyProviderShop(factory, catalog);
         }
 
         private Player CreatePlayer(Wallet wallet, ClickIncome clickIncome)

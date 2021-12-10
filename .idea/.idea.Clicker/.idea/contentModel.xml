@@ -26,9 +26,6 @@
               <e p="IMoneyProvider.cs" t="Include" />
               <e p="IUpgrade.cs" t="Include" />
               <e p="MoneyProvider.cs" t="Include" />
-              <e p="Shops" t="Include">
-                <e p="MoneyProviderShop.cs" t="Include" />
-              </e>
               <e p="SimpleMoneyProvider.cs" t="Include" />
               <e p="UpgradableMoneyProvider.cs" t="Include" />
             </e>
@@ -37,6 +34,7 @@
           </e>
           <e p="Installers" t="Include">
             <e p="GameInstaller.cs" t="Include" />
+            <e p="MoneyProviderInstaller.cs" t="Include" />
           </e>
           <e p="Numbers" t="Include">
             <e p="Number.cs" t="Include" />
@@ -45,12 +43,15 @@
             <e p="Player.cs" t="Include" />
             <e p="PlayerInput.cs" t="Include" />
           </e>
+          <e p="Shops" t="Include">
+            <e p="MoneyProviderShop.cs" t="Include" />
+            <e p="UpgradeShops" t="Include">
+              <e p="UpgradeShop.cs" t="Include" />
+            </e>
+          </e>
           <e p="UI" t="Include">
             <e p="ScoreView.cs" t="Include" />
             <e p="Ui.cs" t="Include" />
-          </e>
-          <e p="UpgradeShops" t="Include">
-            <e p="UpgradeShop.cs" t="Include" />
           </e>
         </e>
       </e>

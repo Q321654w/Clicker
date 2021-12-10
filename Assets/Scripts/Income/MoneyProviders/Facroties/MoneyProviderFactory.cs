@@ -1,20 +1,23 @@
-﻿using System.Linq;
+﻿using System;
+using System.Collections.Generic;
 
 namespace DefaultNamespace
 {
-    public class MoneyProviderFactory 
+    public class MoneyProviderFactory
     {
-        private readonly IMoneyProvider[] _moneyProviders;
+        private readonly Dictionary<int, IMoneyProvider> _moneyProviders;
 
-        public MoneyProviderFactory(IMoneyProvider[] moneyProviders)
+        public MoneyProviderFactory(Dictionary<int, IMoneyProvider> moneyProviders)
         {
             _moneyProviders = moneyProviders;
         }
 
-        public MoneyProvider Get<T>() where T : IMoneyProvider
+        public MoneyProvider Get(int id)
         {
-            var moneyProvider = _moneyProviders.First(s => s is T);
-            return new MoneyProvider(moneyProvider);
+            if (_moneyProviders.TryGetValue(id, out var moneyProvider))
+                return new MoneyProvider(moneyProvider);
+            
+            throw new Exception();
         }
     }
 }

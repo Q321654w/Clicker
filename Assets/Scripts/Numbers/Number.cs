@@ -27,9 +27,11 @@ namespace DefaultNamespace
                 _radixDegree++;
             }
 
-            _numeric *= Mathf.Pow(RADIX,_radixDegree);
+            var radixInDegree = Mathf.Pow(RADIX, _radixDegree);
+            
+            _numeric *= radixInDegree;
             _numeric = Mathf.CeilToInt(_numeric);
-            _numeric /= Mathf.Pow(RADIX,_radixDegree);
+            _numeric /= radixInDegree;
         }
 
         public override string ToString()

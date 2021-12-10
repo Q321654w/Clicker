@@ -1,46 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="10fecada-1f0d-4ed6-808a-f8cf1e01246f" name="Default Changelist" comment="" />
+    <list default="true" id="10fecada-1f0d-4ed6-808a-f8cf1e01246f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Installers/MoneyProviderInstaller.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Installers/MoneyProviderInstaller.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Clicker/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Clicker/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Clicker/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Clicker/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Clicker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Clicker/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/Facroties/MoneyProviderFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/Facroties/MoneyProviderFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/Shops.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shops.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/Shops/MoneyProviderShop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/MoneyProviderShop.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/Shops/MoneyProviderShop.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/MoneyProviderShop.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/Shops/Prefabs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Prefabs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Installers/GameInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Installers/GameInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Numbers/Number.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Numbers/Number.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UpgradeShops.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/UpgradeShops.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UpgradeShops/UpgradeShop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/UpgradeShops/UpgradeShop.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UpgradeShops/UpgradeShop.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/UpgradeShops/UpgradeShop.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Numbers/Number.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameUpdate/GameUpdates.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/UpgradableMoneyProvider.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Income/PassiveIncome.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/Facroties/MoneyProviderFactory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/IUpgrade.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/IMoneyProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Installers/GameInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Ui.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/SimpleMoneyProvider.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UpgradeShops/UpgradeShop.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shops/UpgradeShops/UpgradeShop.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Numbers/Number.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameUpdate/GameUpdates.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Income/ClickIncome.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ScoreView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/UpgradableMoneyProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerInput.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameUpdate/IGameUpdate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Income/PassiveIncome.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/MoneyProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Game.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/Facroties/MoneyProviderFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Income/Wallet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Installers/MoneyProviderInstaller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/IUpgrade.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Common/CustomButton.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/Shops/MoneyProviderShop.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/IMoneyProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shops/MoneyProviderShop.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/MoneyCalc.cs" />
-        <option value="$PROJECT_DIR$/Assets/Money.cs" />
-        <option value="$PROJECT_DIR$/Assets/Click.cs" />
-        <option value="$PROJECT_DIR$/Assets/IUpgradable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Cursor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Shop.cs" />
-        <option value="$PROJECT_DIR$/Assets/MoneyProviderType.cs" />
-        <option value="$PROJECT_DIR$/Assets/Product.cs" />
         <option value="$PROJECT_DIR$/Assets/MoneyProviderCombiner.cs" />
         <option value="$PROJECT_DIR$/Assets/MoneyProviderUpgradeShop.cs" />
         <option value="$PROJECT_DIR$/Assets/MoneyProvidersShop.cs" />
@@ -69,7 +84,6 @@
         <option value="$PROJECT_DIR$/Assets/Number.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/Shops/MoneyProviderTypeNumberPair.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UpgradeShops/IUpgradeNumberPair.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UpgradeShops/UpgradeShopConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/IUpgrade.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/IMoneyProvider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Income/PassiveIncome.cs" />
@@ -78,16 +92,26 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/UpgradableMoneyProvider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Income/ClickIncome.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/Facroties/MoneyProviderConfig.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UpgradeShops/UpgradeShop.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/Facroties/MoneyProviderFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shop.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Numbers/Number.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/Shops/MoneyProviderShop.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/Facroties/MoneyProviderFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UpgradeShops/UpgradeShop.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UpgradeShops/IdNumberPair.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UpgradeShops/UpgradeShopConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UpgradeShops/Catalog.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shops/UpgradeShops/Catalog.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shops/UpgradeShops/CatalogConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shops/MoneyProviderShop.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shops/UpgradeShops/UpgradeShop.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Installers/GameInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Installers/MoneyProviderInstaller.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="21XuqI8wmZxm8imCUW3uMHBG91E" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
