@@ -5,82 +5,66 @@ namespace DefaultNamespace
 {
     public class GameInstaller : MonoBehaviour
     {
-        [SerializeField] private MoneyProviderInstaller _moneyProviderInstaller;
         [SerializeField] private GameUpdates _gameUpdates;
         [SerializeField] private ScoreView _scoreViewPrefab;
         [SerializeField] private Canvas _canvasPrefab;
         [SerializeField] private CustomButton _clickButtonPrefab;
+        [SerializeField] private MoneyProviderFactory _moneyProviderFactory;
+        [SerializeField] private Product[] _catalog;
+        [SerializeField] private NumberFormatter _numberFormatter;
 
         private void Awake()
         {
-            _moneyProviderInstaller.Install();
             Install();
         }
 
         private void Install()
         {
-            var providerFactory = CreateMoneyProviderFactory();
-            var moneyProviderShop = CreateMoneyProviderShop(providerFactory);
-            var upgradeShop = CreateUpgradeShop();
+            var shop = new Shop(_moneyProviderFactory, _catalog);
 
             var wallet = CreateWallet();
             var ui = CreateUi(wallet, out var button);
             var clickIncome = CreateClickIncome(wallet, button);
-            var player = CreatePlayer(wallet, clickIncome);
+            var player = CreatePlayer(wallet, clickIncome, shop);
 
-            var game = new Game(_gameUpdates, player, ui, moneyProviderShop, upgradeShop);
+            var game = new Game(_gameUpdates, player, ui, shop);
             game.Start();
-        }
-
-        private MoneyProviderFactory CreateMoneyProviderFactory()
-        {
-            var moneyProviders = _moneyProviderInstaller.MoneyProviders;
-            return new MoneyProviderFactory(moneyProviders);
         }
 
         private Wallet CreateWallet()
         {
-            return new Wallet(new Number(0, 1));
+            return new Wallet();
         }
 
         private ClickIncome CreateClickIncome(Wallet wallet, CustomButton button)
         {
-            var number = new Number(0, 1);
-            var simpleMoneyProvider = new SimpleMoneyProvider(number);
-            var moneyProvider = new MoneyProvider(simpleMoneyProvider);
-            return new ClickIncome(wallet, button, moneyProvider);
+            var number = new Number(1, 2);
+            var simpleMoneyProvider = new MoneyProvider(number);
+            var incomeProvider = new IncomeProvider(simpleMoneyProvider);
+            return new ClickIncome(wallet, button, incomeProvider);
         }
 
         private Ui CreateUi(Wallet wallet, out CustomButton clickButton)
         {
             var canvas = Instantiate(_canvasPrefab);
             var scoreView = Instantiate(_scoreViewPrefab, canvas.transform);
-            scoreView.Initialize(wallet);
+            scoreView.Initialize(wallet, _numberFormatter);
 
             clickButton = Instantiate(_clickButtonPrefab, canvas.transform);
 
             return new Ui(scoreView);
         }
 
-        private UpgradeShop CreateUpgradeShop()
-        {
-            var catalog = new Dictionary<int, Number>();
-            var moneyProviders = new Dictionary<int, IUpgrade>();
-            return new UpgradeShop(catalog, moneyProviders);
-        }
-
-        private MoneyProviderShop CreateMoneyProviderShop(MoneyProviderFactory factory)
-        {
-            var catalog = new Dictionary<int, Number>();
-            return new MoneyProviderShop(factory, catalog);
-        }
-
-        private Player CreatePlayer(Wallet wallet, ClickIncome clickIncome)
+        private Player CreatePlayer(Wallet wallet, ClickIncome clickIncome, Shop shop)
         {
             var playerInput = new PlayerInput(KeyCode.Mouse0);
-            var incomeProviders = new List<IMoneyProvider>();
-            var income = new PassiveIncome(incomeProviders);
-            return new Player(wallet, playerInput, income, clickIncome);
+            var moneyProviders = new List<MoneyProvider>()
+            {
+                new MoneyProvider(new Number(0, 1))
+            };
+            var incomeProvider = new IncomeProvider(moneyProviders);
+            var income = new Income(wallet, incomeProvider);
+            return new Player(wallet, playerInput, income, clickIncome, shop);
         }
     }
 }

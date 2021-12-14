@@ -4,19 +4,19 @@
     {
         private readonly Wallet _wallet;
         private readonly CustomButton _button;
-        private readonly MoneyProvider _moneyProvider;
+        private readonly IncomeProvider _incomeProvider;
 
-        public ClickIncome(Wallet wallet, CustomButton button, MoneyProvider moneyProvider)
+        public ClickIncome(Wallet wallet, CustomButton button, IncomeProvider incomeProvider)
         {
             _wallet = wallet;
             _button = button;
-            _moneyProvider = moneyProvider;
+            _incomeProvider = incomeProvider;
             _button.Clicked += OnClicked;
         }
 
         private void OnClicked()
         {
-            var income = _moneyProvider.GetMoney();
+            var income = _incomeProvider.GetIncome();
             _wallet.AddMoney(income);
         }
     }

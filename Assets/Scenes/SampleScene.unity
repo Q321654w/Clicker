@@ -152,11 +152,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49c09f3b09c04074b2a85b2f635baa3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moneyProviderInstaller: {fileID: 416418583}
   _gameUpdates: {fileID: 564895742}
   _scoreViewPrefab: {fileID: 9014176788829260109, guid: 56007d488ef646dbb4054b7f5e4c31f0, type: 3}
   _canvasPrefab: {fileID: 6171518975804034853, guid: 04f2510ae6c24d0eb79f180fe85fb318, type: 3}
   _clickButtonPrefab: {fileID: 1342090312946219207, guid: baf2945f6c5e4b2998278626aeaa4959, type: 3}
+  _moneyProviderFactory: {fileID: 11400000, guid: cb90261b339fb054990c53c5d2ba1d33, type: 2}
+  _catalog:
+  - _identificator:
+      _id: 1
+    _price:
+      _numeric: 1
+      _radixDegree: 1
+    _count: 1
+  _numberFormatter: {fileID: 11400000, guid: 87ab86579c544a740b7da3c9c2cc3e52, type: 2}
 --- !u!4 &250957319
 Transform:
   m_ObjectHideFlags: 0
@@ -167,52 +175,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -17.666065, y: -4.006084, z: -14.190281}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 416418584}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &416418582
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 416418584}
-  - component: {fileID: 416418583}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &416418583
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 416418582}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ee7ebcf9dbd449fb1da8ac5cc5a189a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &416418584
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 416418582}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 250957319}
+  m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028

@@ -7,14 +7,18 @@ namespace DefaultNamespace
     {
         [SerializeField] private Text _score;
 
-        public void Initialize(Wallet wallet)
+        private NumberFormatter _numberFormatter;
+
+        public void Initialize(Wallet wallet, NumberFormatter numberFormatter)
         {
+            _numberFormatter = numberFormatter;
             wallet.MoneyCountChanged += OnMoneyCountChanged;
         }
 
         private void OnMoneyCountChanged(Number number)
         {
-            _score.text = "" + number;
+            var message = _numberFormatter.FormatToString(number);
+            _score.text = "" + message;
         }
     }
 }

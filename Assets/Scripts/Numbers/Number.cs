@@ -7,7 +7,9 @@ namespace DefaultNamespace
     public struct Number
     {
         [SerializeField] private float _numeric;
-        [SerializeField, Range(0, 1000)] private int _radixDegree;
+        [SerializeField] private int _radixDegree;
+
+        public int RadixInDegree => _radixDegree;
 
         private const int RADIX = 10;
 
@@ -15,20 +17,32 @@ namespace DefaultNamespace
         {
             _radixDegree = radixDegree;
             _numeric = numeric;
-            
+
             FormatToStandartNumberFormat();
         }
-        
+
         private void FormatToStandartNumberFormat()
         {
+            if (_numeric != 0)
+                while (Mathf.Abs(_numeric) < 1)
+                {
+                    _numeric *= RADIX;
+                    _radixDegree--;
+                }
+
+            Ceil();
+
             while (Mathf.Abs(_numeric) >= RADIX)
             {
                 _numeric /= RADIX;
                 _radixDegree++;
             }
+        }
 
-            var radixInDegree = Mathf.Pow(RADIX, _radixDegree);
-            
+        private void Ceil()
+        {
+            var radixInDegree = Mathf.Pow(RADIX, Mathf.Abs(_radixDegree));
+
             _numeric *= radixInDegree;
             _numeric = Mathf.CeilToInt(_numeric);
             _numeric /= radixInDegree;
@@ -76,7 +90,7 @@ namespace DefaultNamespace
                 var biggerNumber = number1 > number2 ? number1 : number2;
                 var smallerNumber = number1 < number2 ? number1 : number2;
 
-                var numeric = biggerNumber._numeric - smallerNumber._numeric/ (int)Mathf.Pow(RADIX, difference);
+                var numeric = biggerNumber._numeric - smallerNumber._numeric / Mathf.Pow(RADIX, difference);
                 var nullsCount = biggerNumber._radixDegree;
 
                 return new Number(nullsCount, numeric);

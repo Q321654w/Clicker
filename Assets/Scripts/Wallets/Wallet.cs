@@ -7,7 +7,12 @@ namespace DefaultNamespace
         public event Action<Number> MoneyCountChanged;
 
         public Number Money { get; private set; }
-
+        
+        public Wallet()
+        {
+            
+        }
+        
         public Wallet(Number money)
         {
             Money = money;

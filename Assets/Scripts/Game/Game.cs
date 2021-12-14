@@ -5,16 +5,14 @@
         private GameUpdates _gameUpdates;
         private Player _player;
         private Ui _ui;
-        private MoneyProviderShop _moneyProviderShop;
-        private UpgradeShop _upgradeShop;
-        
-        public Game(GameUpdates gameUpdates, Player player, Ui ui, MoneyProviderShop moneyProviderShop, UpgradeShop upgradeShop)
+        private Shop _shop;
+
+        public Game(GameUpdates gameUpdates, Player player, Ui ui, Shop shop)
         {
             _gameUpdates = gameUpdates;
             _player = player;
             _ui = ui;
-            _moneyProviderShop = moneyProviderShop;
-            _upgradeShop = upgradeShop;
+            _shop = shop;
         }
         
         public void Start()
