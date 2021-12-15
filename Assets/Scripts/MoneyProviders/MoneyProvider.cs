@@ -6,9 +6,9 @@ namespace DefaultNamespace
     public class MoneyProvider : ScriptableObject
     {
         [SerializeField] private Number _number;
-        [SerializeField] private MoneyProviderId _moneyProviderId;
+        [SerializeField] private string _moneyProviderId;
         
-        public MoneyProviderId ProviderId => _moneyProviderId;
+        public string ProviderId => _moneyProviderId;
 
         public Number GetMoney()
         {

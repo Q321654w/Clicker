@@ -10,15 +10,15 @@ namespace DefaultNamespace
         private readonly PlayerInput _input;
         private readonly Income _passiveIncome;
         private readonly ClickIncome _clickIncome;
-        private readonly Shop _shop;
+        private readonly Inventory _inventory;
 
-        public Player(Wallet wallet, PlayerInput input, Income passiveIncome, ClickIncome clickIncome, Shop shop)
+        public Player(Wallet wallet, PlayerInput input, Income passiveIncome, ClickIncome clickIncome, Inventory inventory)
         {
             _wallet = wallet;
             _input = input;
             _passiveIncome = passiveIncome;
             _clickIncome = clickIncome;
-            _shop = shop;
+            _inventory = inventory;
         }
         
         public void GameUpdate(float deltaTime)

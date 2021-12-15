@@ -6,34 +6,36 @@ namespace DefaultNamespace
     {
         private readonly ProductDataBase _dataBase;
         private readonly Inventory _inventory;
-        private Dictionary<ProductId, int> _catalog;
+        private readonly Wallet _wallet;
+        private readonly Dictionary<ProductId, int> _catalog;
 
-        public Shop(Inventory inventory, ProductDataBase dataBase)
+        public Shop(Inventory inventory, ProductDataBase dataBase, Wallet wallet)
         {
             _inventory = inventory;
             _dataBase = dataBase;
+            _wallet = wallet;
 
             _catalog = new Dictionary<ProductId, int>();
             foreach (var product in _dataBase.Products)
             {
-                _catalog.Add(product.Id, product.Count);
+                _catalog.Add(product.ProductId, product.Count);
             }
         }
 
-        public void Buy(ProductId id, Wallet wallet)
+        public void Buy(ProductId id)
         {
             var product = _dataBase.GetProduct(id);
-            
+
             if (_catalog[id] == 0)
                 return;
-            
+
             var price = product.Price;
-                
-            if (!wallet.TrySubtract(price))
+
+            if (!_wallet.TrySubtract(price))
                 return;
             
-            _catalog[id] -= 1; 
-            _inventory.Items.Add(new MoneyProviderId(product.ProviderId));
+            _catalog[id] -= 1;
+            _inventory.AddItem(product.Id);
         }
     }
 }

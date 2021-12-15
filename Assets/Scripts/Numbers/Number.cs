@@ -11,7 +11,7 @@ namespace DefaultNamespace
 
         public int RadixInDegree => _radixDegree;
 
-        private const int RADIX = 10;
+        private const int RADIX = 1000;
 
         public Number(int radixDegree, float numeric)
         {

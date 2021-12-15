@@ -18,7 +18,7 @@ namespace DefaultNamespace
         private void OnMoneyCountChanged(Number number)
         {
             var message = _numberFormatter.FormatToString(number);
-            _score.text = "" + message;
+            _score.text = $"{message}";
         }
     }
 }

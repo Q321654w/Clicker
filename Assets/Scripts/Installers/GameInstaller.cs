@@ -5,13 +5,12 @@ namespace DefaultNamespace
 {
     public class GameInstaller : MonoBehaviour
     {
+        [SerializeField] private UiInstaller _uiInstaller;
         [SerializeField] private GameUpdates _gameUpdates;
-        [SerializeField] private ScoreView _scoreViewPrefab;
-        [SerializeField] private Canvas _canvasPrefab;
-        [SerializeField] private CustomButton _clickButtonPrefab;
-        [SerializeField] private MoneyProviderFactory _moneyProviderFactory;
-        [SerializeField] private Product[] _catalog;
-        [SerializeField] private NumberFormatter _numberFormatter;
+
+        [SerializeField] private ProductDataBase _productDataBase;
+        [SerializeField] private MoneyProviderDataBase _providerDataBase;
+        [SerializeField] private string _clickMoneyProviderId;
 
         private void Awake()
         {
@@ -20,15 +19,31 @@ namespace DefaultNamespace
 
         private void Install()
         {
-            var shop = new Shop(_moneyProviderFactory, _catalog);
-
             var wallet = CreateWallet();
-            var ui = CreateUi(wallet, out var button);
-            var clickIncome = CreateClickIncome(wallet, button);
-            var player = CreatePlayer(wallet, clickIncome, shop);
+            var inventory = CreateInventory();
+            
+            var shop = new Shop(inventory, _productDataBase, wallet);
 
-            var game = new Game(_gameUpdates, player, ui, shop);
+            var ui = _uiInstaller.Install(wallet, shop, _productDataBase);
+            
+            var clickIncome = CreateClickIncome(wallet, _uiInstaller.ClickButton);
+            var passiveIncome = CreatePassiveIncome(wallet, inventory, out var mediator);
+            var player = CreatePlayer(wallet, clickIncome, passiveIncome, inventory);
+
+            var game = new Game(_gameUpdates, player, ui, shop, mediator);
             game.Start();
+        }
+
+        private Income CreatePassiveIncome(Wallet wallet, Inventory inventory, out InventoryIncomeProviderMediator mediator)
+        {
+            var incomeProvider = new IncomeProvider(new List<MoneyProvider>());
+            mediator = new InventoryIncomeProviderMediator(incomeProvider, inventory, _providerDataBase);
+            return new Income(wallet, incomeProvider);
+        }
+
+        private Inventory CreateInventory()
+        {
+            return new Inventory(new List<string>());
         }
 
         private Wallet CreateWallet()
@@ -38,33 +53,15 @@ namespace DefaultNamespace
 
         private ClickIncome CreateClickIncome(Wallet wallet, CustomButton button)
         {
-            var number = new Number(1, 2);
-            var simpleMoneyProvider = new MoneyProvider(number);
-            var incomeProvider = new IncomeProvider(simpleMoneyProvider);
+            var moneyProvider = _providerDataBase.GetMoneyProvider(_clickMoneyProviderId);
+            var incomeProvider = new IncomeProvider(moneyProvider);
             return new ClickIncome(wallet, button, incomeProvider);
         }
 
-        private Ui CreateUi(Wallet wallet, out CustomButton clickButton)
-        {
-            var canvas = Instantiate(_canvasPrefab);
-            var scoreView = Instantiate(_scoreViewPrefab, canvas.transform);
-            scoreView.Initialize(wallet, _numberFormatter);
-
-            clickButton = Instantiate(_clickButtonPrefab, canvas.transform);
-
-            return new Ui(scoreView);
-        }
-
-        private Player CreatePlayer(Wallet wallet, ClickIncome clickIncome, Shop shop)
+        private Player CreatePlayer(Wallet wallet, ClickIncome clickIncome, Income passiveIncome, Inventory inventory)
         {
             var playerInput = new PlayerInput(KeyCode.Mouse0);
-            var moneyProviders = new List<MoneyProvider>()
-            {
-                new MoneyProvider(new Number(0, 1))
-            };
-            var incomeProvider = new IncomeProvider(moneyProviders);
-            var income = new Income(wallet, incomeProvider);
-            return new Player(wallet, playerInput, income, clickIncome, shop);
+            return new Player(wallet, playerInput, passiveIncome, clickIncome, inventory);
         }
     }
 }

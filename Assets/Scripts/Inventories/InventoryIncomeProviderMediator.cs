@@ -14,9 +14,9 @@
             _inventory.ItemAdded += OnItemAdded;
         }
 
-        private void OnItemAdded(MoneyProviderId id)
+        private void OnItemAdded(string id)
         {
-            var moneyProvider = _providerDataBase.GetProduct(id);
+            var moneyProvider = _providerDataBase.GetMoneyProvider(id);
             _incomeProvider.AddMoneyProvider(moneyProvider);
         }
     }

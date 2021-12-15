@@ -6,14 +6,17 @@ namespace DefaultNamespace
     [Serializable]
     public struct Product
     {
-        [SerializeField] private ProductId _id;
-        [SerializeField] private string _moneyProviderId;
+        [SerializeField] private ProductId _productId;
+        [SerializeField] private string _name;
+        [SerializeField] private string _id;
         [SerializeField] private Number _price;
         [SerializeField] private int _count;
         
-        public ProductId Id => _id;
-        public string ProviderId => _moneyProviderId;
+        public ProductId ProductId => _productId;
+        public string Name => _name;
+        public string Id => _id;
         public Number Price => _price;
         public int Count => _count;
+
     }
 }

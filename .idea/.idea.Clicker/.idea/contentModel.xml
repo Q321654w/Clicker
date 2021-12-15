@@ -24,31 +24,36 @@
           </e>
           <e p="Installers" t="Include">
             <e p="GameInstaller.cs" t="Include" />
+            <e p="UiInstaller.cs" t="Include" />
           </e>
-          <e p="Inventory.cs" t="Include" />
-          <e p="InventoryIncomeProviderMediator.cs" t="Include" />
-          <e p="MoneyProviderDataBase.cs" t="Include" />
+          <e p="Inventories" t="Include">
+            <e p="Inventory.cs" t="Include" />
+            <e p="InventoryIncomeProviderMediator.cs" t="Include" />
+          </e>
           <e p="MoneyProviders" t="Include">
             <e p="MoneyProvider.cs" t="Include" />
-            <e p="MoneyProviderId.cs" t="Include" />
+            <e p="MoneyProviderDataBase.cs" t="Include" />
           </e>
           <e p="Numbers" t="Include">
             <e p="Number.cs" t="Include" />
             <e p="NumberFormatter.cs" t="Include" />
           </e>
-          <e p="Player" t="Include">
+          <e p="Players" t="Include">
             <e p="Player.cs" t="Include" />
             <e p="PlayerInput.cs" t="Include" />
           </e>
-          <e p="Product.cs" t="Include" />
-          <e p="ProductDataBase.cs" t="Include" />
           <e p="Shops" t="Include">
-            <e p="ProductId.cs" t="Include" />
+            <e p="Products" t="Include">
+              <e p="Product.cs" t="Include" />
+              <e p="ProductDataBase.cs" t="Include" />
+              <e p="ProductId.cs" t="Include" />
+            </e>
             <e p="Shop.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
             <e p="CharIntPair.cs" t="Include" />
             <e p="ScoreView.cs" t="Include" />
+            <e p="ShopView.cs" t="Include" />
             <e p="Ui.cs" t="Include" />
           </e>
           <e p="Wallets" t="Include">

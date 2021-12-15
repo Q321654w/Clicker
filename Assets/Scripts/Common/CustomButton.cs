@@ -1,16 +1,24 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 namespace DefaultNamespace
 {
     public class CustomButton : MonoBehaviour, IPointerDownHandler
     {
-        public event Action Clicked;
+        [SerializeField] private Text _text;
+        
+        public event Action<CustomButton> Clicked;
+
+        public void Initialize(string text)
+        {
+            _text.text = text;
+        }
 
         public void OnPointerDown(PointerEventData eventData)
         {
-            Clicked?.Invoke();
+            Clicked?.Invoke(this);
         }
     }
 }

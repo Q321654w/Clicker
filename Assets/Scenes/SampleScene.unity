@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 250957319}
   - component: {fileID: 250957318}
+  - component: {fileID: 250957320}
   m_Layer: 0
   m_Name: Installer
   m_TagString: Untagged
@@ -152,19 +153,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49c09f3b09c04074b2a85b2f635baa3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _uiInstaller: {fileID: 250957320}
   _gameUpdates: {fileID: 564895742}
-  _scoreViewPrefab: {fileID: 9014176788829260109, guid: 56007d488ef646dbb4054b7f5e4c31f0, type: 3}
-  _canvasPrefab: {fileID: 6171518975804034853, guid: 04f2510ae6c24d0eb79f180fe85fb318, type: 3}
-  _clickButtonPrefab: {fileID: 1342090312946219207, guid: baf2945f6c5e4b2998278626aeaa4959, type: 3}
-  _moneyProviderFactory: {fileID: 11400000, guid: cb90261b339fb054990c53c5d2ba1d33, type: 2}
-  _catalog:
-  - _identificator:
-      _id: 1
-    _price:
-      _numeric: 1
-      _radixDegree: 1
-    _count: 1
-  _numberFormatter: {fileID: 11400000, guid: 87ab86579c544a740b7da3c9c2cc3e52, type: 2}
+  _productDataBase: {fileID: 11400000, guid: 77ffe82113cb5874aa327a69eab9e99f, type: 2}
+  _providerDataBase: {fileID: 11400000, guid: 17a0679e88c1d5d4183e66cff3af698f, type: 2}
+  _clickMoneyProviderId: Click
 --- !u!4 &250957319
 Transform:
   m_ObjectHideFlags: 0
@@ -179,6 +172,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &250957320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250957317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38b4df4d20254a01bcda5989628da3f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scoreViewPrefab: {fileID: 9014176788829260109, guid: 56007d488ef646dbb4054b7f5e4c31f0, type: 3}
+  _canvasPrefab: {fileID: 6171518975804034853, guid: 04f2510ae6c24d0eb79f180fe85fb318, type: 3}
+  _clickButtonPrefab: {fileID: 1342090312946219207, guid: baf2945f6c5e4b2998278626aeaa4959, type: 3}
+  _shopViewPrefab: {fileID: 8240014516209274467, guid: 8b4e7a58bdf1a894eae6266697db4bbc, type: 3}
+  _numberFormatter: {fileID: 11400000, guid: 87ab86579c544a740b7da3c9c2cc3e52, type: 2}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
