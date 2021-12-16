@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf311d5310cd4df89443402203be234f, type: 3}
+  m_Script: {fileID: 11500000, guid: f8e81650b94446f283d3d286ceedc705, type: 3}
   m_Name: Click
   m_EditorClassIdentifier: 
   _number:
     _numeric: 1
     _radixDegree: 0
-  _moneyProviderId: Click
+  _id: Click

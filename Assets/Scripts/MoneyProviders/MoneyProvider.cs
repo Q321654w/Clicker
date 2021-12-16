@@ -1,14 +1,13 @@
-﻿using UnityEngine;
-
-namespace DefaultNamespace
+﻿namespace DefaultNamespace
 {
-    [CreateAssetMenu(menuName = "MoneyProvider")]
-    public class MoneyProvider : ScriptableObject
+    public class MoneyProvider
     {
-        [SerializeField] private Number _number;
-        [SerializeField] private string _moneyProviderId;
+        private readonly Number _number; 
         
-        public string ProviderId => _moneyProviderId;
+        public MoneyProvider(MoneyProviderConfig config)
+        {
+            _number = config.Number;
+        }
 
         public Number GetMoney()
         {

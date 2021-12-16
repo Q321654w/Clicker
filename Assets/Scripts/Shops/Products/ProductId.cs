@@ -7,7 +7,6 @@ namespace DefaultNamespace
     public struct ProductId : IEquatable<ProductId>
     {
         [SerializeField] private int _id;
-        public int Id => _id;
 
         public ProductId(int id)
         {

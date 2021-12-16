@@ -2,56 +2,79 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10fecada-1f0d-4ed6-808a-f8cf1e01246f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Installers/UiInstaller.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Installers/UiInstaller.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Products.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/Prefabs/Click.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/Prefabs/Click.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/Prefabs/Cursor.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/Prefabs/Cursor.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/Prefabs/Grandma.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/Prefabs/Grandma.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/Prefabs/Grandpa.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/Prefabs/Grandpa.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/Prefabs/New Product Data Base.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/Prefabs/New Product Data Base.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ShopView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ShopView.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/IPriceProviders.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/IPriceProviders/CountScalingPrice.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/IPriceProviders/CountScalingPrice.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/IPriceProviders/IPriceProvider.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/IPriceProviders/IPriceProvider.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MoneyProviders/Factories.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MoneyProviders/Factories/DataBases.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MoneyProviders/Factories/DataBases/Prefabs/New Money Provider Data Base.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MoneyProviders/Factories/MoneyProviderConfig.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MoneyProviders/Factories/MoneyProviderConfig.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MoneyProviders/Factories/MoneyProviderFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MoneyProviders/Factories/MoneyProviderFactory.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/ProductProviders.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/ProductProviders/Factories.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/ProductProviders/Factories/DataBases.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/ProductProviders/Factories/DataBases/ProductDataBase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/ProductProviders/Factories/ProductConfig.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/ProductProviders/Factories/ProductConfig.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/ProductProviders/Factories/ProductFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/ProductProviders/Factories/ProductFactory.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/ProductProviders/ProductProvider.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/ProductProviders/ProductProvider.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ProductView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ProductView.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Clicker/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Clicker/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Clicker/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Clicker/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Clicker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Clicker/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Common/CustomButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Common/CustomButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Common/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Common/Prefabs/Button.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Common/Prefabs/Button.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Game.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Income/ClickIncome.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Income/ClickIncome.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Installers/GameInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Installers/GameInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InventoryIncomeProviderMediator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InventoryIncomeProviderMediator.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MoneyProviderDataBase.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MoneyProviderDataBase.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Installers/New Money Provider Config.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Installers/New Money Provider Config.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Installers/UiInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Installers/UiInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventories/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/Inventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventories/InventoryIncomeProviderMediator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/InventoryIncomeProviderMediator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MoneyProviders/MoneyProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MoneyProviders/MoneyProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MoneyProviders/MoneyProviderId.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MoneyProviders/MoneyProviderId.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MoneyProviders/MoneyProviderDataBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MoneyProviders/Factories/DataBases/MoneyProviderDataBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MoneyProviders/MoneyProviderDataBase.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MoneyProviders/Factories/DataBases/MoneyProviderDataBase.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MoneyProviders/New Money Provider Data Base.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MoneyProviders/Factories/DataBases/Prefabs/New Money Provider Data Base.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MoneyProviders/New Money Provider Data Base.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Numbers/Number.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Numbers/Number.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInput.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInput.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Product.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Product.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ProductDataBase.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ProductDataBase.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shops/ProductId.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/ProductId.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shops/ProductId.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/ProductId.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shops/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/Prefabs/Click.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/Prefabs/Click.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/Prefabs/Click.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/Prefabs/Click.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/Prefabs/Cursor.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/Prefabs/Cursor.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/Prefabs/Cursor.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/Prefabs/Cursor.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/Prefabs/Grandma.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/Prefabs/Grandma.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/Prefabs/Grandpa.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/Prefabs/Grandpa.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/Prefabs/New Product Data Base.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/Prefabs/New Product Data Base.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/Prefabs/New Product Data Base.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/Prefabs/New Product Data Base.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/Product.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/Product.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/ProductDataBase.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/ProductDataBase.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/ProductProviders/Factories/DataBases/ProductDataBase.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/ProductId.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Products/ProductId.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shops/Shop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Shop.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ScoreView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ScoreView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Ui.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Ui.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Prefabs/Button.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Prefabs/Button.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Prefabs/ShopView.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Prefabs/ShopView.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ShopView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ShopView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe4.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe4.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe5.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe5.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe6.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe6.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe7.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe7.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,22 +87,32 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ShopView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Income/Income.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shops/Products/ProductProviders/ProductProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/IPriceProviders/CountScalingPrice.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ProductView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Numbers/Number.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoneyProviders/Factories/MoneyProviderConfig.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/IPriceProviders/IPriceProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameUpdate/GameUpdates.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shops/Products/Product.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shops/Products/ProductDataBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shops/Products/ProductProviders/Factories/DataBases/ProductDataBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Income/IncomeProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/CharIntPair.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoneyProviders/MoneyProviderDataBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoneyProviders/Factories/DataBases/MoneyProviderDataBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventories/InventoryIncomeProviderMediator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventories/Inventory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shops/Products/ProductProviders/Factories/ProductFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Installers/GameInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Ui.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoneyProviders/MoneyProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Numbers/NumberFormatter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Income/ClickIncome.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shops/Products/ProductProviders/Factories/ProductConfig.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ScoreView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Installers/UiInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shops/Shop.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameUpdate/IGameUpdate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoneyProviders/Factories/MoneyProviderFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Game.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Wallets/Wallet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Common/CustomButton.cs" root0="FORCE_HIGHLIGHTING" />
@@ -88,23 +121,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/ШШеуь.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/IItem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Game.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/SimpleMoneyProvider.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MoneyProviderType.cs" />
-        <option value="$PROJECT_DIR$/Assets/Identificator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Installers/MoneyProviderInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/IProduct.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/IProductCOnfig.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/IProductConfig.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MoneyProviderConfig.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Income/MoneyProviders/Facroties/MoneyProviderFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MoneyProviderConfigCountPair.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ShopConfig.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Shops/ProductInfo.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Shops/ProductConfig.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ItemConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Income/PassiveIncomerovider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Income/ClickIncomeProvider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Income/PassiveIncome.cs" />
@@ -121,24 +137,41 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/MoneyProviders/Facroties/MoneyProviderFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MoneyProviders/Facroties/MoneyProviderConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MoneyProviders/MoneyProviderId.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MoneyProviders/MoneyProvider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InventoryIncomeProviderMediator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ProductDataBase.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MoneyProviderDataBase.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ScoreView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Income/ClickIncome.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Product.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Common/CustomButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/ShopView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Ui.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Installers/ShopInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Installers/UiInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Installers/GameInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Shops/Shop.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Numbers/Number.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Numbers/NumberFormatter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/IPriceProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/Inventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CountScalingPrice.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shops/Products/ProductId.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MoneyProviders/MoneyProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MoneyProviders/MoneyProviderConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MoneyProviders/MoneyProviderDataBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/InventoryIncomeProviderMediator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MoneyProviders/MoneyProviderFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shops/Products/ProductDataBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shops/Products/ProductFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shops/Products/ProductConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Numbers/Number.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shops/Products/ProductProviders/ProductProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shops/Products/ProductProviders/Factories/ProductFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Installers/GameInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Common/CustomButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Income/ClickIncome.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shops/Products/Product.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shops/Shop.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Installers/UiInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/ShopView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/IPriceProviders/IPriceProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/ProductView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/IPriceProviders/CountScalingPrice.cs" />
       </list>
     </option>
   </component>
@@ -151,8 +184,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3630399" />
-    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.31109896" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3629469" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.3109426" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -165,10 +198,10 @@
       <option name="pid" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="49832">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="49832" />
       <method v="2" />
     </configuration>
   </component>
@@ -181,74 +214,74 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="421" height="464" key="DebuggerActiveHint" timestamp="1639503507505">
+    <state width="444" height="464" key="DebuggerActiveHint" timestamp="1639674514824">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="421" height="464" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1639503507505" />
-    <state width="1877" height="378" key="GridCell.Tab.0.bottom" timestamp="1639509355664">
+    <state width="444" height="464" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1639674514824" />
+    <state width="1877" height="378" key="GridCell.Tab.0.bottom" timestamp="1639675014995">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="378" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1639509355664" />
-    <state width="1877" height="378" key="GridCell.Tab.0.center" timestamp="1639509355664">
+    <state width="1877" height="378" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1639675014995" />
+    <state width="1877" height="378" key="GridCell.Tab.0.center" timestamp="1639675014995">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="378" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1639509355664" />
-    <state width="1877" height="378" key="GridCell.Tab.0.left" timestamp="1639509355664">
+    <state width="1877" height="378" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1639675014995" />
+    <state width="1877" height="378" key="GridCell.Tab.0.left" timestamp="1639675014995">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="378" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1639509355664" />
-    <state width="1877" height="378" key="GridCell.Tab.0.right" timestamp="1639509355664">
+    <state width="1877" height="378" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1639675014995" />
+    <state width="1877" height="378" key="GridCell.Tab.0.right" timestamp="1639675014995">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="378" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1639509355664" />
-    <state width="1877" height="378" key="GridCell.Tab.1.bottom" timestamp="1639509355664">
+    <state width="1877" height="378" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1639675014995" />
+    <state width="1877" height="378" key="GridCell.Tab.1.bottom" timestamp="1639675014996">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="378" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1639509355664" />
-    <state width="1877" height="378" key="GridCell.Tab.1.center" timestamp="1639509355664">
+    <state width="1877" height="378" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1639675014996" />
+    <state width="1877" height="378" key="GridCell.Tab.1.center" timestamp="1639675014996">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="378" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1639509355664" />
-    <state width="1877" height="378" key="GridCell.Tab.1.left" timestamp="1639509355664">
+    <state width="1877" height="378" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1639675014996" />
+    <state width="1877" height="378" key="GridCell.Tab.1.left" timestamp="1639675014996">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="378" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1639509355664" />
-    <state width="1877" height="378" key="GridCell.Tab.1.right" timestamp="1639509355664">
+    <state width="1877" height="378" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1639675014996" />
+    <state width="1877" height="378" key="GridCell.Tab.1.right" timestamp="1639675014996">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="378" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1639509355664" />
-    <state width="1877" height="378" key="GridCell.Tab.2.bottom" timestamp="1639509355664">
+    <state width="1877" height="378" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1639675014996" />
+    <state width="1877" height="378" key="GridCell.Tab.2.bottom" timestamp="1639675014996">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="378" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1639509355664" />
-    <state width="1877" height="378" key="GridCell.Tab.2.center" timestamp="1639509355664">
+    <state width="1877" height="378" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1639675014996" />
+    <state width="1877" height="378" key="GridCell.Tab.2.center" timestamp="1639675014995">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="378" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1639509355664" />
-    <state width="1877" height="378" key="GridCell.Tab.2.left" timestamp="1639509355664">
+    <state width="1877" height="378" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1639675014995" />
+    <state width="1877" height="378" key="GridCell.Tab.2.left" timestamp="1639675014995">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="378" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1639509355664" />
-    <state width="1877" height="378" key="GridCell.Tab.2.right" timestamp="1639509355664">
+    <state width="1877" height="378" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1639675014995" />
+    <state width="1877" height="378" key="GridCell.Tab.2.right" timestamp="1639675014995">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="378" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1639509355664" />
-    <state width="1877" height="378" key="GridCell.Tab.3.bottom" timestamp="1639509355664">
+    <state width="1877" height="378" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1639675014995" />
+    <state width="1877" height="378" key="GridCell.Tab.3.bottom" timestamp="1639675014996">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="378" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1639509355664" />
-    <state width="1877" height="378" key="GridCell.Tab.3.center" timestamp="1639509355664">
+    <state width="1877" height="378" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1639675014996" />
+    <state width="1877" height="378" key="GridCell.Tab.3.center" timestamp="1639675014996">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="378" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1639509355664" />
-    <state width="1877" height="378" key="GridCell.Tab.3.left" timestamp="1639509355664">
+    <state width="1877" height="378" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1639675014996" />
+    <state width="1877" height="378" key="GridCell.Tab.3.left" timestamp="1639675014996">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="378" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1639509355664" />
-    <state width="1877" height="378" key="GridCell.Tab.3.right" timestamp="1639509355664">
+    <state width="1877" height="378" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1639675014996" />
+    <state width="1877" height="378" key="GridCell.Tab.3.right" timestamp="1639675014996">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="378" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1639509355664" />
+    <state width="1877" height="378" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1639675014996" />
     <state x="764" y="221" key="RiderGenerateDialog" timestamp="1639505939396">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

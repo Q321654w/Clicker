@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using DefaultNamespace.ProductProviders;
 using UnityEngine;
 
 namespace DefaultNamespace
@@ -21,23 +22,45 @@ namespace DefaultNamespace
         {
             var wallet = CreateWallet();
             var inventory = CreateInventory();
-            
-            var shop = new Shop(inventory, _productDataBase, wallet);
 
-            var ui = _uiInstaller.Install(wallet, shop, _productDataBase);
-            
-            var clickIncome = CreateClickIncome(wallet, _uiInstaller.ClickButton);
-            var passiveIncome = CreatePassiveIncome(wallet, inventory, out var mediator);
+            var moneyProviderFactory = new MoneyProviderFactory(_providerDataBase);
+            var productFactory = new ProductFactory(inventory, _productDataBase);
+            var productProvider = CreateProductProvider(productFactory);
+            var shop = CreateShop(inventory, productProvider, wallet);
+
+            var ui = _uiInstaller.Install(wallet, shop, productProvider);
+
+            var clickIncome = CreateClickIncome(wallet, moneyProviderFactory, _uiInstaller.ClickButton);
+            var passiveIncome = CreatePassiveIncome(wallet, inventory, moneyProviderFactory, out var mediator);
             var player = CreatePlayer(wallet, clickIncome, passiveIncome, inventory);
 
             var game = new Game(_gameUpdates, player, ui, shop, mediator);
             game.Start();
         }
 
-        private Income CreatePassiveIncome(Wallet wallet, Inventory inventory, out InventoryIncomeProviderMediator mediator)
+        private ProductProvider CreateProductProvider(ProductFactory productFactory)
+        {
+            var products = productFactory.CreateAll();
+            return new ProductProvider(productFactory, products);
+        }
+
+        private Shop CreateShop(Inventory inventory, ProductProvider productProvider, Wallet wallet)
+        {
+            var catalog = new Dictionary<ProductId, int>();
+
+            foreach (var config in _productDataBase.ProductConfigs)
+            {
+                catalog.Add(config.ProductId, config.BaseCount);
+            }
+
+            return new Shop(inventory, productProvider, wallet, catalog);
+        }
+
+        private Income CreatePassiveIncome(Wallet wallet, Inventory inventory, MoneyProviderFactory factory,
+            out InventoryIncomeProviderMediator mediator)
         {
             var incomeProvider = new IncomeProvider(new List<MoneyProvider>());
-            mediator = new InventoryIncomeProviderMediator(incomeProvider, inventory, _providerDataBase);
+            mediator = new InventoryIncomeProviderMediator(incomeProvider, inventory, factory);
             return new Income(wallet, incomeProvider);
         }
 
@@ -51,9 +74,9 @@ namespace DefaultNamespace
             return new Wallet();
         }
 
-        private ClickIncome CreateClickIncome(Wallet wallet, CustomButton button)
+        private ClickIncome CreateClickIncome(Wallet wallet, MoneyProviderFactory factory, CustomButton button)
         {
-            var moneyProvider = _providerDataBase.GetMoneyProvider(_clickMoneyProviderId);
+            var moneyProvider = factory.Create(_clickMoneyProviderId);
             var incomeProvider = new IncomeProvider(moneyProvider);
             return new ClickIncome(wallet, button, incomeProvider);
         }

@@ -19,5 +19,18 @@ namespace DefaultNamespace
             _items.Add(id);
             ItemAdded?.Invoke(id);
         }
+
+        public int GetCountOf(string id)
+        {
+            var count = 0;
+            
+            foreach(var item in _items)
+            {
+                if (item == id)
+                    count++;
+            }
+
+            return count;
+        }
     }
 }

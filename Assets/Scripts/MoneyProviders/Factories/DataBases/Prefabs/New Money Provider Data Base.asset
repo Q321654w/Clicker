@@ -13,7 +13,5 @@ MonoBehaviour:
   m_Name: New Money Provider Data Base
   m_EditorClassIdentifier: 
   _moneyProviders:
-  - {fileID: 11400000, guid: b58e8bd986ef8a84eada6d38788b68fc, type: 2}
-  - {fileID: 11400000, guid: 7792d9d82e4475041ba3fc41cf57bd48, type: 2}
-  - {fileID: 11400000, guid: 6cf36b72b920f3841bfe1b92b60ee467, type: 2}
-  - {fileID: 11400000, guid: 71bbebec9753fb34cb8ee74d8ebe86bd, type: 2}
+  - {fileID: 11400000, guid: 1763946c08e72b64f9988464bf1ad05c, type: 2}
+  - {fileID: 11400000, guid: 62e73e05384cfc244aedcee69026e3ff, type: 2}

@@ -156,7 +156,7 @@ MonoBehaviour:
   _uiInstaller: {fileID: 250957320}
   _gameUpdates: {fileID: 564895742}
   _productDataBase: {fileID: 11400000, guid: 77ffe82113cb5874aa327a69eab9e99f, type: 2}
-  _providerDataBase: {fileID: 11400000, guid: 17a0679e88c1d5d4183e66cff3af698f, type: 2}
+  _providerDataBase: {fileID: 11400000, guid: 6bd039ed49134ca0b3f2912911ba4b77, type: 2}
   _clickMoneyProviderId: Click
 --- !u!4 &250957319
 Transform:

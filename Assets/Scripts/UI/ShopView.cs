@@ -5,29 +5,29 @@ namespace DefaultNamespace
 {
     public class ShopView : MonoBehaviour
     {
-        [SerializeField] private CustomButton _buttonPrefab;
+        [SerializeField] private ProductView _productViewPrefab;
         [SerializeField] private Transform _content;
 
         private Shop _shop;
-        private Dictionary<int, ProductId> _buttons;
+        private Dictionary<int, ProductId> _productViews;
 
-        public void Initialize(IEnumerable<Product> products, Shop shop)
+        public void Initialize(IEnumerable<Product> products, Shop shop, NumberFormatter numberFormatter)
         {
             _shop = shop;
-            _buttons = new Dictionary<int, ProductId>();
+            _productViews = new Dictionary<int, ProductId>();
 
             foreach (var product in products)
             {
-                var button = Instantiate(_buttonPrefab, _content);
-                button.Initialize(product.Name);
-                button.Clicked += OnClicked;
-                _buttons.Add(button.GetHashCode(), product.ProductId);
+                var productView = Instantiate(_productViewPrefab, _content);
+                productView.Initialize(product.Name, product.PriceProvider, numberFormatter);
+                productView.Clicked += OnClicked;
+                _productViews.Add(productView.GetHashCode(), product.ProductId);
             }
         }
 
-        private void OnClicked(CustomButton button)
+        private void OnClicked(ProductView button)
         {
-            _buttons.TryGetValue(button.GetHashCode(), out var id);
+            _productViews.TryGetValue(button.GetHashCode(), out var id);
             _shop.Buy(id);
         }
     }

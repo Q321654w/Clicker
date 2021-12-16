@@ -30,9 +30,19 @@
             <e p="Inventory.cs" t="Include" />
             <e p="InventoryIncomeProviderMediator.cs" t="Include" />
           </e>
+          <e p="IPriceProviders" t="Include">
+            <e p="CountScalingPrice.cs" t="Include" />
+            <e p="IPriceProvider.cs" t="Include" />
+          </e>
           <e p="MoneyProviders" t="Include">
+            <e p="Factories" t="Include">
+              <e p="DataBases" t="Include">
+                <e p="MoneyProviderDataBase.cs" t="Include" />
+              </e>
+              <e p="MoneyProviderConfig.cs" t="Include" />
+              <e p="MoneyProviderFactory.cs" t="Include" />
+            </e>
             <e p="MoneyProvider.cs" t="Include" />
-            <e p="MoneyProviderDataBase.cs" t="Include" />
           </e>
           <e p="Numbers" t="Include">
             <e p="Number.cs" t="Include" />
@@ -45,13 +55,23 @@
           <e p="Shops" t="Include">
             <e p="Products" t="Include">
               <e p="Product.cs" t="Include" />
-              <e p="ProductDataBase.cs" t="Include" />
               <e p="ProductId.cs" t="Include" />
+              <e p="ProductProviders" t="Include">
+                <e p="Factories" t="Include">
+                  <e p="DataBases" t="Include">
+                    <e p="ProductDataBase.cs" t="Include" />
+                  </e>
+                  <e p="ProductConfig.cs" t="Include" />
+                  <e p="ProductFactory.cs" t="Include" />
+                </e>
+                <e p="ProductProvider.cs" t="Include" />
+              </e>
             </e>
             <e p="Shop.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
             <e p="CharIntPair.cs" t="Include" />
+            <e p="ProductView.cs" t="Include" />
             <e p="ScoreView.cs" t="Include" />
             <e p="ShopView.cs" t="Include" />
             <e p="Ui.cs" t="Include" />

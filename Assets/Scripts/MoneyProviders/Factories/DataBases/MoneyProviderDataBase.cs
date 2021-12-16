@@ -6,11 +6,11 @@ namespace DefaultNamespace
     [CreateAssetMenu(menuName = "MoneyProviderDataBase")]
     public class MoneyProviderDataBase : ScriptableObject
     {
-        [SerializeField] private MoneyProvider[] _moneyProviders;
+        [SerializeField] private MoneyProviderConfig[] _moneyProviders;
         
-        public MoneyProvider GetMoneyProvider(string id)
+        public MoneyProviderConfig GetMoneyProvider(string id)
         {
-            return _moneyProviders.Single(s => s.ProviderId == id);
+            return _moneyProviders.Single(s => s.Id == id);
         }
     }
 }

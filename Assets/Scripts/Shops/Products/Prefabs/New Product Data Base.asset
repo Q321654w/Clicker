@@ -12,28 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0239bd79957d4ea199134ce01c89293f, type: 3}
   m_Name: New Product Data Base
   m_EditorClassIdentifier: 
-  _products:
-  - _productId:
-      _id: 1
+  _productConfigs:
+  - _productProductId:
+      _id: 0
     _name: Cursor
     _id: Cursor
-    _price:
-      _numeric: 1
+    _basePrice:
+      _numeric: 10
       _radixDegree: 0
-    _count: 2147483647
-  - _productId:
-      _id: 2
-    _name: Grandma
-    _id: Grandma
-    _price:
-      _numeric: 1
-      _radixDegree: 0
-    _count: 2147483647
-  - _productId:
-      _id: 3
-    _name: Grandpa
-    _id: Grandpa
-    _price:
-      _numeric: 1
-      _radixDegree: 0
-    _count: 2147483647
+    _baseCount: 10

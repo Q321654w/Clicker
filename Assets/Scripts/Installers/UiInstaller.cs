@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using DefaultNamespace.ProductProviders;
+using UnityEngine;
 
 namespace DefaultNamespace
 {
@@ -12,12 +13,12 @@ namespace DefaultNamespace
 
         public CustomButton ClickButton { get; private set; }
 
-        public Ui Install(Wallet wallet, Shop shop, ProductDataBase dataBase)
+        public Ui Install(Wallet wallet, Shop shop, ProductProvider productProvider)
         {
-            return CreateUi(wallet, shop, dataBase);
+            return CreateUi(wallet, shop, productProvider);
         }
 
-        private Ui CreateUi(Wallet wallet, Shop shop, ProductDataBase dataBase)
+        private Ui CreateUi(Wallet wallet, Shop shop, ProductProvider productProvider)
         {
             var canvas = Instantiate(_canvasPrefab);
             var scoreView = Instantiate(_scoreViewPrefab, canvas.transform);
@@ -26,7 +27,7 @@ namespace DefaultNamespace
             ClickButton = Instantiate(_clickButtonPrefab, canvas.transform);
 
             var shopView = Instantiate(_shopViewPrefab, canvas.transform);
-            shopView.Initialize(dataBase.Products, shop);
+            shopView.Initialize(productProvider.GetAllProducts(), shop, _numberFormatter);
 
             return new Ui(scoreView, shopView);
         }

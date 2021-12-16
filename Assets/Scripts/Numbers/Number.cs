@@ -24,10 +24,10 @@ namespace DefaultNamespace
         private void FormatToStandartNumberFormat()
         {
             if (_numeric != 0)
-                while (Mathf.Abs(_numeric) < 1)
+                while (Mathf.Abs(_numeric) >= RADIX)
                 {
-                    _numeric *= RADIX;
-                    _radixDegree--;
+                    _numeric /= RADIX;
+                    _radixDegree++;
                 }
 
             Ceil();
@@ -41,7 +41,7 @@ namespace DefaultNamespace
 
         private void Ceil()
         {
-            var radixInDegree = Mathf.Pow(RADIX, Mathf.Abs(_radixDegree));
+            var radixInDegree = (int) Mathf.Pow(RADIX, Mathf.Abs(_radixDegree));
 
             _numeric *= radixInDegree;
             _numeric = Mathf.CeilToInt(_numeric);

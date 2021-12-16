@@ -1,22 +1,23 @@
-﻿using System;
-using UnityEngine;
-
-namespace DefaultNamespace
+﻿namespace DefaultNamespace
 {
-    [Serializable]
-    public struct Product
+    public class Product
     {
-        [SerializeField] private ProductId _productId;
-        [SerializeField] private string _name;
-        [SerializeField] private string _id;
-        [SerializeField] private Number _price;
-        [SerializeField] private int _count;
+        private readonly ProductId _productId;
+        private readonly string _name;
+        private readonly string _id;
+        private readonly IPriceProvider _priceProvider;
         
+        public Product(ProductConfig config, IPriceProvider priceProvider)
+        {
+            _productId = config.ProductId;
+            _name = config.Name;
+            _id = config.Id;
+            _priceProvider = priceProvider;
+        }
+
         public ProductId ProductId => _productId;
         public string Name => _name;
         public string Id => _id;
-        public Number Price => _price;
-        public int Count => _count;
-
+        public IPriceProvider PriceProvider => _priceProvider;
     }
 }

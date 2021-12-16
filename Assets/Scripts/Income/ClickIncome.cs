@@ -14,7 +14,7 @@
             _button.Clicked += OnClicked;
         }
 
-        private void OnClicked(CustomButton button)
+        private void OnClicked()
         {
             var income = _incomeProvider.GetIncome();
             _wallet.AddMoney(income);

@@ -360,7 +360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ffa5ca4ae4a4044b5225068dcaaf36c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _buttonPrefab: {fileID: 7730669251910979598, guid: 2601705dfbca1ee439d74148f5b25a2e, type: 3}
+  _productViewPrefab: {fileID: 3880194328707936377, guid: 2601705dfbca1ee439d74148f5b25a2e, type: 3}
   _content: {fileID: 4438852310828817034}
 --- !u!1 &4438852312003204244
 GameObject:
