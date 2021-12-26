@@ -7,7 +7,7 @@ namespace DefaultNamespace
     public class ProductView : MonoBehaviour
     {
         public event Action<ProductView> Clicked;
-        
+
         [SerializeField] private Text _count;
         [SerializeField] private Text _price;
         [SerializeField] private CustomButton _customButton;
@@ -19,10 +19,10 @@ namespace DefaultNamespace
         {
             _priceProvider = priceProvider;
             _numberFormatter = numberFormatter;
-            
+
             _customButton.Initialize(productName);
             OnPriceChanged(priceProvider.GetPrice());
-            
+
             priceProvider.PriceChanged += OnPriceChanged;
             _customButton.Clicked += OnClicked;
         }

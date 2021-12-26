@@ -22,7 +22,7 @@ namespace DefaultNamespace
             _passedTime += deltaTime;
             if (_passedTime < _incomeDelay)
                 return;
-            
+
             _passedTime = 0;
             var income = _incomeProvider.GetIncome();
             _wallet.AddMoney(income);

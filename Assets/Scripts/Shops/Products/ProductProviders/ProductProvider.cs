@@ -20,7 +20,7 @@ namespace DefaultNamespace.ProductProviders
 
             if (product == null)
                 product = _factory.Create(id);
-            
+
             return product;
         }
 

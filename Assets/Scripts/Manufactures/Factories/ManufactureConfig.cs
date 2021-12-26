@@ -3,7 +3,7 @@
 namespace DefaultNamespace
 {
     [CreateAssetMenu(menuName = "MoneyProviderConfig")]
-    public class MoneyProviderConfig : ScriptableObject
+    public class ManufactureConfig : ScriptableObject
     {
         [SerializeField] private Number _number;
         [SerializeField] private string _id;

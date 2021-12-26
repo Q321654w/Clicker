@@ -1,22 +1,22 @@
 ﻿namespace DefaultNamespace
 {
-    public class InventoryIncomeProviderMediator
+    public class InventoryManufactureMediator
     {
         private readonly IncomeProvider _incomeProvider;
         private readonly Inventory _inventory;
-        private readonly MoneyProviderFactory _moneyProviderFactory;
+        private readonly ManufactureFactory _manufactureFactory;
 
-        public InventoryIncomeProviderMediator(IncomeProvider incomeProvider, Inventory inventory, MoneyProviderFactory moneyProviderFactory)
+        public InventoryManufactureMediator(IncomeProvider incomeProvider, Inventory inventory, ManufactureFactory manufactureFactory)
         {
             _incomeProvider = incomeProvider;
             _inventory = inventory;
-            _moneyProviderFactory = moneyProviderFactory;
+            _manufactureFactory = manufactureFactory;
             _inventory.ItemAdded += OnItemAdded;
         }
 
         private void OnItemAdded(string id)
         {
-            var moneyProvider = _moneyProviderFactory.Create(id);
+            var moneyProvider = _manufactureFactory.Create(id);
             _incomeProvider.AddMoneyProvider(moneyProvider);
         }
     }

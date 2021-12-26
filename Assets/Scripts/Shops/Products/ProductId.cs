@@ -22,7 +22,7 @@ namespace DefaultNamespace
         {
             return id1._id != id2._id;
         }
-        
+
         public bool Equals(ProductId other)
         {
             return _id == other._id;

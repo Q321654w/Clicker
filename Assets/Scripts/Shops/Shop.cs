@@ -23,7 +23,7 @@ namespace DefaultNamespace
         {
             if (_catalog.TryGetValue(id, out var count))
                 return count;
-            
+
             throw new Exception();
         }
 

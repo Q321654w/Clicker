@@ -6,7 +6,7 @@
         private readonly string _name;
         private readonly string _id;
         private readonly IPriceProvider _priceProvider;
-        
+
         public Product(ProductConfig config, IPriceProvider priceProvider)
         {
             _productId = config.ProductId;

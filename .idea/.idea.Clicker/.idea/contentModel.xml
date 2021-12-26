@@ -7,6 +7,7 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="BuffFactoryFacade.cs" t="Include" />
           <e p="Common" t="Include">
             <e p="CustomButton.cs" t="Include" />
           </e>
@@ -17,6 +18,8 @@
             <e p="GameUpdates.cs" t="Include" />
             <e p="IGameUpdate.cs" t="Include" />
           </e>
+          <e p="IBuff.cs" t="Include" />
+          <e p="IBuffFactory.cs" t="Include" />
           <e p="Income" t="Include">
             <e p="ClickIncome.cs" t="Include" />
             <e p="Income.cs" t="Include" />
@@ -28,29 +31,31 @@
           </e>
           <e p="Inventories" t="Include">
             <e p="Inventory.cs" t="Include" />
-            <e p="InventoryIncomeProviderMediator.cs" t="Include" />
+            <e p="InventoryBuffMediator.cs" t="Include" />
+            <e p="InventoryManufactureMediator.cs" t="Include" />
           </e>
           <e p="IPriceProviders" t="Include">
             <e p="CountScalingPrice.cs" t="Include" />
             <e p="IPriceProvider.cs" t="Include" />
           </e>
-          <e p="MoneyProviders" t="Include">
+          <e p="Manufactures" t="Include">
             <e p="Factories" t="Include">
               <e p="DataBases" t="Include">
-                <e p="MoneyProviderDataBase.cs" t="Include" />
+                <e p="ManufactureDataBase.cs" t="Include" />
               </e>
-              <e p="MoneyProviderConfig.cs" t="Include" />
-              <e p="MoneyProviderFactory.cs" t="Include" />
+              <e p="ManufactureConfig.cs" t="Include" />
+              <e p="ManufactureFactory.cs" t="Include" />
             </e>
-            <e p="MoneyProvider.cs" t="Include" />
+            <e p="Manufacture.cs" t="Include" />
           </e>
+          <e p="MultiplyBuff.cs" t="Include" />
+          <e p="MultiplyBuffFactory.cs" t="Include" />
           <e p="Numbers" t="Include">
             <e p="Number.cs" t="Include" />
             <e p="NumberFormatter.cs" t="Include" />
           </e>
           <e p="Players" t="Include">
             <e p="Player.cs" t="Include" />
-            <e p="PlayerInput.cs" t="Include" />
           </e>
           <e p="Shops" t="Include">
             <e p="Products" t="Include">

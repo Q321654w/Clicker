@@ -10,7 +10,7 @@ namespace DefaultNamespace
         [SerializeField] private GameUpdates _gameUpdates;
 
         [SerializeField] private ProductDataBase _productDataBase;
-        [SerializeField] private MoneyProviderDataBase _providerDataBase;
+        [SerializeField] private ManufactureDataBase _providerDataBase;
         [SerializeField] private string _clickMoneyProviderId;
 
         private void Awake()
@@ -23,7 +23,9 @@ namespace DefaultNamespace
             var wallet = CreateWallet();
             var inventory = CreateInventory();
 
-            var moneyProviderFactory = new MoneyProviderFactory(_providerDataBase);
+            var multiplierBuffFactory = new MultiplyBuffFactory("Manufacture");
+            var buffFactory = new BuffFactoryFacade(new IBuffFactory[] {multiplierBuffFactory});
+            var moneyProviderFactory = new ManufactureFactory(_providerDataBase);
             var productFactory = new ProductFactory(inventory, _productDataBase);
             var productProvider = CreateProductProvider(productFactory);
             var shop = CreateShop(inventory, productProvider, wallet);
@@ -31,7 +33,8 @@ namespace DefaultNamespace
             var ui = _uiInstaller.Install(wallet, shop, productProvider);
 
             var clickIncome = CreateClickIncome(wallet, moneyProviderFactory, _uiInstaller.ClickButton);
-            var passiveIncome = CreatePassiveIncome(wallet, inventory, moneyProviderFactory, out var mediator);
+            var passiveIncome = CreatePassiveIncome(wallet, inventory, moneyProviderFactory, buffFactory, out var mediator,
+                out var buffMediator);
             var player = CreatePlayer(wallet, clickIncome, passiveIncome, inventory);
 
             var game = new Game(_gameUpdates, player, ui, shop, mediator);
@@ -56,11 +59,15 @@ namespace DefaultNamespace
             return new Shop(inventory, productProvider, wallet, catalog);
         }
 
-        private Income CreatePassiveIncome(Wallet wallet, Inventory inventory, MoneyProviderFactory factory,
-            out InventoryIncomeProviderMediator mediator)
+        private Income CreatePassiveIncome(Wallet wallet, Inventory inventory, ManufactureFactory factory,
+            BuffFactoryFacade buffFactoryFacade,
+            out InventoryManufactureMediator inventoryManufactureMediator, out InventoryBuffMediator inventoryBuffMediator)
         {
-            var incomeProvider = new IncomeProvider(new List<MoneyProvider>());
-            mediator = new InventoryIncomeProviderMediator(incomeProvider, inventory, factory);
+            var incomeProvider = new IncomeProvider(new List<Manufacture>(),
+                new List<IBuff>());
+
+            inventoryBuffMediator = new InventoryBuffMediator(incomeProvider, buffFactoryFacade, inventory);
+            inventoryManufactureMediator = new InventoryManufactureMediator(incomeProvider, inventory, factory);
             return new Income(wallet, incomeProvider);
         }
 
@@ -74,17 +81,16 @@ namespace DefaultNamespace
             return new Wallet();
         }
 
-        private ClickIncome CreateClickIncome(Wallet wallet, MoneyProviderFactory factory, CustomButton button)
+        private ClickIncome CreateClickIncome(Wallet wallet, ManufactureFactory factory, CustomButton button)
         {
             var moneyProvider = factory.Create(_clickMoneyProviderId);
-            var incomeProvider = new IncomeProvider(moneyProvider);
+            var incomeProvider = new IncomeProvider(moneyProvider, new List<IBuff>());
             return new ClickIncome(wallet, button, incomeProvider);
         }
 
         private Player CreatePlayer(Wallet wallet, ClickIncome clickIncome, Income passiveIncome, Inventory inventory)
         {
-            var playerInput = new PlayerInput(KeyCode.Mouse0);
-            return new Player(wallet, playerInput, passiveIncome, clickIncome, inventory);
+            return new Player(wallet, passiveIncome, clickIncome, inventory);
         }
     }
 }

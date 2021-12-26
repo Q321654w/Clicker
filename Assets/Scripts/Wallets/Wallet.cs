@@ -7,12 +7,11 @@ namespace DefaultNamespace
         public event Action<Number> MoneyCountChanged;
 
         public Number Money { get; private set; }
-        
+
         public Wallet()
         {
-            
         }
-        
+
         public Wallet(Number money)
         {
             Money = money;
@@ -23,15 +22,15 @@ namespace DefaultNamespace
             Money += number;
             MoneyCountChanged?.Invoke(Money);
         }
-        
+
         public bool TrySubtract(Number number)
         {
             if (number > Money)
                 return false;
-            
+
             Money -= number;
             MoneyCountChanged?.Invoke(Money);
-            
+
             return true;
         }
     }

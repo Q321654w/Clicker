@@ -23,8 +23,8 @@ namespace DefaultNamespace
         public int GetCountOf(string id)
         {
             var count = 0;
-            
-            foreach(var item in _items)
+
+            foreach (var item in _items)
             {
                 if (item == id)
                     count++;

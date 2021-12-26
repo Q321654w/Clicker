@@ -16,7 +16,7 @@ MonoBehaviour:
   - _productProductId:
       _id: 0
     _name: Cursor
-    _id: Cursor
+    _id: Manufacture/Cursor
     _basePrice:
       _numeric: 10
       _radixDegree: 0

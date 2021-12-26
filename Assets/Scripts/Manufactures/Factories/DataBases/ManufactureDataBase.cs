@@ -4,11 +4,11 @@ using UnityEngine;
 namespace DefaultNamespace
 {
     [CreateAssetMenu(menuName = "MoneyProviderDataBase")]
-    public class MoneyProviderDataBase : ScriptableObject
+    public class ManufactureDataBase : ScriptableObject
     {
-        [SerializeField] private MoneyProviderConfig[] _moneyProviders;
-        
-        public MoneyProviderConfig GetMoneyProvider(string id)
+        [SerializeField] private ManufactureConfig[] _moneyProviders;
+
+        public ManufactureConfig GetMoneyProvider(string id)
         {
             return _moneyProviders.Single(s => s.Id == id);
         }
