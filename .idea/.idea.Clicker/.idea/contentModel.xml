@@ -28,8 +28,7 @@
           </e>
           <e p="Income" t="Include">
             <e p="ClickIncome.cs" t="Include" />
-            <e p="Income.cs" t="Include" />
-            <e p="IncomeProvider.cs" t="Include" />
+            <e p="PassiveIncome.cs" t="Include" />
           </e>
           <e p="Installers" t="Include">
             <e p="GameInstaller.cs" t="Include" />

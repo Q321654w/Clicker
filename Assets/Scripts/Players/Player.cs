@@ -7,22 +7,22 @@ namespace DefaultNamespace
         public event Action<IGameUpdate> UpdateRemoveRequested;
 
         private readonly Wallet _wallet;
-        private readonly Income _passiveIncome;
+        private readonly PassiveIncome _passivePassiveIncome;
         private readonly ClickIncome _clickIncome;
         private readonly Inventory _inventory;
 
-        public Player(Wallet wallet, Income passiveIncome, ClickIncome clickIncome, Inventory inventory)
+        public Player(Wallet wallet, PassiveIncome passivePassiveIncome, ClickIncome clickIncome, Inventory inventory)
         {
             _wallet = wallet;
 
-            _passiveIncome = passiveIncome;
+            _passivePassiveIncome = passivePassiveIncome;
             _clickIncome = clickIncome;
             _inventory = inventory;
         }
 
         public void GameUpdate(float deltaTime)
         {
-            _passiveIncome.GameUpdate(deltaTime);
+            _passivePassiveIncome.GameUpdate(deltaTime);
         }
     }
 }

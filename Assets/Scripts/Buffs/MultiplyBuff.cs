@@ -10,16 +10,15 @@
             _multiplier = multiplier;
             _targetId = targetId;
         }
-
-        public bool TryApply(string id, Number moneys, out Number buffedMoneys)
+        
+        public bool CanApply(string id)
         {
-            buffedMoneys = new Number(0, 0);
+            return id == _targetId;
+        }
 
-            if (id != _targetId)
-                return false;
-
-            buffedMoneys = moneys * _multiplier;
-            return true;
+        public Number Apply(Number moneys)
+        {
+            return moneys * _multiplier;
         }
     }
 }

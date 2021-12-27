@@ -1,20 +1,21 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace DefaultNamespace
 {
-    public class Income : IGameUpdate
+    public class PassiveIncome : IGameUpdate
     {
         public event Action<IGameUpdate> UpdateRemoveRequested;
 
         private readonly Wallet _wallet;
-        private readonly IncomeProvider _incomeProvider;
+        private readonly IEnumerable<Manufacture> _manufactures;
         private float _incomeDelay = 1f;
         private float _passedTime;
 
-        public Income(Wallet wallet, IncomeProvider incomeProvider)
+        public PassiveIncome(Wallet wallet, IEnumerable<Manufacture> incomeProvider)
         {
             _wallet = wallet;
-            _incomeProvider = incomeProvider;
+            _manufactures = incomeProvider;
         }
 
         public void GameUpdate(float deltaTime)
@@ -24,7 +25,14 @@ namespace DefaultNamespace
                 return;
 
             _passedTime = 0;
-            var income = _incomeProvider.GetIncome();
+            
+            var income = new Number(0,0);
+            
+            foreach (var manufacture in _manufactures)
+            {
+                income += manufacture.GetMoney();
+            }
+            
             _wallet.AddMoney(income);
         }
     }

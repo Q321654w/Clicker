@@ -59,16 +59,14 @@ namespace DefaultNamespace
             return new Shop(inventory, productProvider, wallet, catalog);
         }
 
-        private Income CreatePassiveIncome(Wallet wallet, Inventory inventory, ManufactureFactory factory,
+        private PassiveIncome CreatePassiveIncome(Wallet wallet, Inventory inventory, ManufactureFactory factory,
             BuffFactoryFacade buffFactoryFacade,
             out InventoryManufactureMediator inventoryManufactureMediator, out InventoryBuffMediator inventoryBuffMediator)
         {
-            var incomeProvider = new IncomeProvider(new List<Manufacture>(),
-                new List<IBuff>());
-
-            inventoryBuffMediator = new InventoryBuffMediator(incomeProvider, buffFactoryFacade, inventory);
-            inventoryManufactureMediator = new InventoryManufactureMediator(incomeProvider, inventory, factory);
-            return new Income(wallet, incomeProvider);
+            var manufactures = new List<Manufacture>();
+            inventoryBuffMediator = new InventoryBuffMediator(manufactures, buffFactoryFacade, inventory);
+            inventoryManufactureMediator = new InventoryManufactureMediator(manufactures, inventory, factory);
+            return new PassiveIncome(wallet, manufactures);
         }
 
         private Inventory CreateInventory()
@@ -83,14 +81,14 @@ namespace DefaultNamespace
 
         private ClickIncome CreateClickIncome(Wallet wallet, ManufactureFactory factory, CustomButton button)
         {
-            var moneyProvider = factory.Create(_clickMoneyProviderId);
-            var incomeProvider = new IncomeProvider(moneyProvider, new List<IBuff>());
-            return new ClickIncome(wallet, button, incomeProvider);
+            var manufacture = factory.Create(_clickMoneyProviderId);
+            
+            return new ClickIncome(wallet, button, new List<Manufacture>(){manufacture});
         }
 
-        private Player CreatePlayer(Wallet wallet, ClickIncome clickIncome, Income passiveIncome, Inventory inventory)
+        private Player CreatePlayer(Wallet wallet, ClickIncome clickIncome, PassiveIncome passivePassiveIncome, Inventory inventory)
         {
-            return new Player(wallet, passiveIncome, clickIncome, inventory);
+            return new Player(wallet, passivePassiveIncome, clickIncome, inventory);
         }
     }
 }

@@ -2,6 +2,7 @@
 {
     public interface IBuff
     {
-        bool TryApply(string id, Number moneys, out Number buffedMoneys);
+        bool CanApply(string id);
+        Number Apply(Number moneys);
     }
 }
