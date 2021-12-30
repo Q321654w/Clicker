@@ -1,17 +1,22 @@
-﻿using System;
-
-namespace DefaultNamespace
+﻿namespace DefaultNamespace
 {
     public class BuffFactoryFacade
     {
-        private IBuffFactory[] _buffFactories;
+        private readonly IBuffFactory[] _buffFactories;
+        private readonly string _idContext;
 
-        public BuffFactoryFacade(IBuffFactory[] buffFactories)
+        public BuffFactoryFacade(IBuffFactory[] buffFactories, string idContext)
         {
             _buffFactories = buffFactories;
+            _idContext = idContext;
         }
 
-        public IBuff CreateMultiplyBuff(string id)
+        public bool CanCreate(string id)
+        {
+            return id.Contains(_idContext);
+        }
+
+        public IBuff CreateBuff(string id)
         {
             foreach (var factory in _buffFactories)
             {
@@ -19,7 +24,7 @@ namespace DefaultNamespace
                     return factory.Create(id);
             }
 
-            throw new Exception();
+            return null;
         }
     }
 }

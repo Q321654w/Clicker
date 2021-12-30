@@ -5,10 +5,11 @@ namespace DefaultNamespace
 {
     public class Manufacture
     {
+        private readonly string _id;
+        
         private readonly Number _baseMoney;
+        private readonly List<IBuff> _buffs;
         private Number _money;
-        private List<IBuff> _buffs;
-        private string _id;
 
         public string Id => _id;
 
@@ -28,12 +29,6 @@ namespace DefaultNamespace
             _buffs = new List<IBuff>();
         }
 
-        public void AddBuff(IBuff buff)
-        {
-            _buffs.Add(buff);
-            CalculateMoney();
-        }
-
         private void CalculateMoney()
         {
             var money = _baseMoney;
@@ -44,12 +39,6 @@ namespace DefaultNamespace
             }
 
             _money = money;
-        }
-
-        public void RemoveBuff(IBuff buff)
-        {
-            _buffs.Remove(buff);
-            CalculateMoney();
         }
 
         public Number GetMoney()

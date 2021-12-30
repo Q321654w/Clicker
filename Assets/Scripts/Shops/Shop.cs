@@ -6,6 +6,8 @@ namespace DefaultNamespace
 {
     public class Shop
     {
+        public event Action<Product> ProductSold;
+        
         private readonly ProductProvider _productProvider;
         private readonly Inventory _inventory;
         private readonly Wallet _wallet;
@@ -34,13 +36,16 @@ namespace DefaultNamespace
             if (_catalog[id] == 0)
                 return;
 
-            var price = product.PriceProvider.GetPrice();
+            var price = product.Price.GetPrice();
 
             if (!_wallet.TrySubtract(price))
                 return;
 
-            _catalog[id] -= 1;
+            if (_catalog[id] > 0)
+                _catalog[id] -= 1;
+            
             _inventory.AddItem(product.Id);
+            ProductSold?.Invoke(product);
         }
     }
 }

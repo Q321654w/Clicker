@@ -1,14 +1,12 @@
-﻿using System.Collections.Generic;
-
-namespace DefaultNamespace
+﻿namespace DefaultNamespace
 {
     public class ClickIncome
     {
         private readonly Wallet _wallet;
         private readonly CustomButton _button;
-        private readonly IEnumerable<Manufacture> _incomeProvider;
+        private readonly IncomeProvider _incomeProvider;
 
-        public ClickIncome(Wallet wallet, CustomButton button, IEnumerable<Manufacture> incomeProvider)
+        public ClickIncome(Wallet wallet, CustomButton button, IncomeProvider incomeProvider)
         {
             _wallet = wallet;
             _button = button;
@@ -18,12 +16,7 @@ namespace DefaultNamespace
 
         private void OnClicked()
         {
-            var income = new Number(0,0);
-            foreach (var manufacture in _incomeProvider)
-            {
-                income += manufacture.GetMoney();
-            }
-            
+            var income = _incomeProvider.GetIncome();
             _wallet.AddMoney(income);
         }
     }

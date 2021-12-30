@@ -1,40 +1,54 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 namespace DefaultNamespace
 {
     public class ProductView : MonoBehaviour
     {
-        public event Action<ProductView> Clicked;
-
-        [SerializeField] private Text _count;
-        [SerializeField] private Text _price;
+        [SerializeField] private Text _countText;
+        [SerializeField] private Text _priceText;
         [SerializeField] private CustomButton _customButton;
 
+        private Shop _shop;
         private NumberFormatter _numberFormatter;
-        private IPriceProvider _priceProvider;
+        private Product _product;
 
-        public void Initialize(string productName, IPriceProvider priceProvider, NumberFormatter numberFormatter)
+        public void Initialize(NumberFormatter numberFormatter, Product product, Shop shop)
         {
-            _priceProvider = priceProvider;
+            _shop = shop;
+            _product = product;
             _numberFormatter = numberFormatter;
 
-            _customButton.Initialize(productName);
-            OnPriceChanged(priceProvider.GetPrice());
+            _countText.text = $"{_shop.GetCountOf(product.ProductId)}";
+            _priceText.text = $"{_numberFormatter.FormatToString(_product.Price.GetPrice())}";
+            _customButton.Initialize(_product.Name);
 
-            priceProvider.PriceChanged += OnPriceChanged;
+            _shop.ProductSold += OnProductSold;
+            _product.Price.PriceChanged += OnPriceChanged;
             _customButton.Clicked += OnClicked;
+        }
+
+        private void OnProductSold(Product product)
+        {
+            if (product.ProductId != _product.ProductId)
+                return;
+
+            var count = _shop.GetCountOf(product.ProductId);
+
+            if (count < 0)
+                _countText.text = "infinity";
+            else
+                _countText.text = $"{count}";
         }
 
         private void OnPriceChanged(Number number)
         {
-            _price.text = $"{_numberFormatter.FormatToString(_priceProvider.GetPrice())}";
+            _priceText.text = $"{_numberFormatter.FormatToString(number)}";
         }
 
-        protected void OnClicked()
+        private void OnClicked()
         {
-            Clicked?.Invoke(this);
+            _shop.Buy(_product.ProductId);
         }
     }
 }

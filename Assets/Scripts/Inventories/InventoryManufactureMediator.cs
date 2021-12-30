@@ -1,14 +1,12 @@
-﻿using System.Collections.Generic;
-
-namespace DefaultNamespace
+﻿namespace DefaultNamespace
 {
     public class InventoryManufactureMediator
     {
-        private readonly List<Manufacture> _incomeProvider;
+        private readonly IncomeProvider _incomeProvider;
         private readonly Inventory _inventory;
         private readonly ManufactureFactory _manufactureFactory;
 
-        public InventoryManufactureMediator(List<Manufacture> incomeProvider, Inventory inventory, ManufactureFactory manufactureFactory)
+        public InventoryManufactureMediator(IncomeProvider incomeProvider, Inventory inventory, ManufactureFactory manufactureFactory)
         {
             _incomeProvider = incomeProvider;
             _inventory = inventory;
@@ -18,8 +16,11 @@ namespace DefaultNamespace
 
         private void OnItemAdded(string id)
         {
-            var moneyProvider = _manufactureFactory.Create(id);
-            _incomeProvider.Add(moneyProvider);
+            if (!_manufactureFactory.CanCreate(id)) 
+                return;
+            
+            var manufacture = _manufactureFactory.Create(id);
+            _incomeProvider.AddManufacture(manufacture);
         }
     }
 }

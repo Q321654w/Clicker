@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace DefaultNamespace
 {
-    [CreateAssetMenu(menuName = "MoneyProviderDataBase")]
+    [CreateAssetMenu(menuName = "ManufactureDataBase")]
     public class ManufactureDataBase : ScriptableObject
     {
         [SerializeField] private ManufactureConfig[] _moneyProviders;

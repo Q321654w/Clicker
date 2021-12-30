@@ -16,8 +16,16 @@ MonoBehaviour:
   - _productProductId:
       _id: 0
     _name: Cursor
-    _id: Manufacture/Cursor
+    _id: Manufactures/Cursor
     _basePrice:
       _numeric: 10
       _radixDegree: 0
     _baseCount: 10
+  - _productProductId:
+      _id: 1
+    _name: CursorMultiplyBuff
+    _id: Buffs/MultiplyBuffs/Cursor
+    _basePrice:
+      _numeric: 1
+      _radixDegree: 0
+    _baseCount: 1
