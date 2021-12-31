@@ -20,7 +20,7 @@ MonoBehaviour:
     _basePrice:
       _numeric: 10
       _radixDegree: 0
-    _baseCount: 10
+    _baseCount: -1
   - _productProductId:
       _id: 1
     _name: CursorMultiplyBuff
@@ -28,4 +28,76 @@ MonoBehaviour:
     _basePrice:
       _numeric: 1
       _radixDegree: 0
-    _baseCount: 1
+    _baseCount: -1
+  - _productProductId:
+      _id: 2
+    _name: 2
+    _id: Buffs/MultiplyBuffs/Cursor
+    _basePrice:
+      _numeric: 1
+      _radixDegree: 0
+    _baseCount: -1
+  - _productProductId:
+      _id: 3
+    _name: 3
+    _id: Buffs/MultiplyBuffs/Cursor
+    _basePrice:
+      _numeric: 1
+      _radixDegree: 0
+    _baseCount: -1
+  - _productProductId:
+      _id: 4
+    _name: 4
+    _id: Buffs/MultiplyBuffs/Cursor
+    _basePrice:
+      _numeric: 1
+      _radixDegree: 0
+    _baseCount: -1
+  - _productProductId:
+      _id: 5
+    _name: 5
+    _id: Buffs/MultiplyBuffs/Cursor
+    _basePrice:
+      _numeric: 1
+      _radixDegree: 0
+    _baseCount: -1
+  - _productProductId:
+      _id: 6
+    _name: 6
+    _id: Buffs/MultiplyBuffs/Cursor
+    _basePrice:
+      _numeric: 1
+      _radixDegree: 0
+    _baseCount: -1
+  - _productProductId:
+      _id: 7
+    _name: 7
+    _id: Buffs/MultiplyBuffs/Cursor
+    _basePrice:
+      _numeric: 1
+      _radixDegree: 0
+    _baseCount: -1
+  - _productProductId:
+      _id: 8
+    _name: 8
+    _id: Buffs/MultiplyBuffs/Cursor
+    _basePrice:
+      _numeric: 1
+      _radixDegree: 0
+    _baseCount: -1
+  - _productProductId:
+      _id: 9
+    _name: 9
+    _id: Buffs/MultiplyBuffs/Cursor
+    _basePrice:
+      _numeric: 1
+      _radixDegree: 0
+    _baseCount: -1
+  - _productProductId:
+      _id: 10
+    _name: 10
+    _id: Buffs/MultiplyBuffs/Cursor
+    _basePrice:
+      _numeric: 1
+      _radixDegree: 0
+    _baseCount: -1

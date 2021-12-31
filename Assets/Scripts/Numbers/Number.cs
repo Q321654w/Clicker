@@ -6,14 +6,14 @@ namespace DefaultNamespace
     [Serializable]
     public struct Number
     {
-        [SerializeField] private float _numeric;
+        [SerializeField] private double _numeric;
         [SerializeField] private int _radixDegree;
 
         public int RadixInDegree => _radixDegree;
 
         private const int RADIX = 1000;
 
-        public Number(int radixDegree, float numeric)
+        public Number(int radixDegree, double numeric)
         {
             _radixDegree = radixDegree;
             _numeric = numeric;
@@ -24,7 +24,7 @@ namespace DefaultNamespace
         private void FormatToStandartNumberFormat()
         {
             if (_numeric != 0)
-                while (Mathf.Abs(_numeric) >= RADIX)
+                while (Math.Abs(_numeric) >= RADIX)
                 {
                     _numeric /= RADIX;
                     _radixDegree++;
@@ -32,7 +32,7 @@ namespace DefaultNamespace
 
             Ceil();
 
-            while (Mathf.Abs(_numeric) >= RADIX)
+            while (Math.Abs(_numeric) >= RADIX)
             {
                 _numeric /= RADIX;
                 _radixDegree++;
@@ -44,7 +44,7 @@ namespace DefaultNamespace
             var radixInDegree = (int) Mathf.Pow(RADIX, Mathf.Abs(_radixDegree));
 
             _numeric *= radixInDegree;
-            _numeric = Mathf.CeilToInt(_numeric);
+            _numeric = Math.Floor(_numeric);
             _numeric /= radixInDegree;
         }
 

@@ -1,13 +1,16 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace DefaultNamespace
 {
     public class IncomeProvider
     {
+        public event Action<Number> IncomeChanged;
+        
         private readonly List<Manufacture> _manufactures;
         private readonly List<IBuff> _buffs;
 
-        private Number _income;
+        public Number Income { get; private set; }
 
         public IncomeProvider(List<Manufacture> manufactures)
         {
@@ -66,12 +69,8 @@ namespace DefaultNamespace
                 income += money;
             }
 
-            _income = income;
-        }
-
-        public Number GetIncome()
-        {
-            return _income;
+            Income = income;
+            IncomeChanged?.Invoke(Income);
         }
     }
 }

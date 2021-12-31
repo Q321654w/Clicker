@@ -25,7 +25,7 @@ namespace DefaultNamespace
 
             _passedTime = 0;
             
-            var income = _incomeProvider.GetIncome();
+            var income = _incomeProvider.Income;
             _wallet.AddMoney(income);
         }
     }

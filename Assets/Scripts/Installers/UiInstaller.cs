@@ -13,16 +13,11 @@ namespace DefaultNamespace
 
         public CustomButton ClickButton { get; private set; }
 
-        public Ui Install(Wallet wallet, Shop shop, ProductProvider productProvider)
-        {
-            return CreateUi(wallet, shop, productProvider);
-        }
-
-        private Ui CreateUi(Wallet wallet, Shop shop, ProductProvider productProvider)
+        public Ui Install(Wallet wallet, Shop shop, ProductProvider productProvider, IncomeProvider incomeProvider)
         {
             var canvas = Instantiate(_canvasPrefab);
             var scoreView = Instantiate(_scoreViewPrefab, canvas.transform);
-            scoreView.Initialize(wallet, _numberFormatter);
+            scoreView.Initialize(wallet, _numberFormatter, incomeProvider);
 
             ClickButton = Instantiate(_clickButtonPrefab, canvas.transform);
 

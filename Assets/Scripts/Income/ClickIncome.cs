@@ -16,7 +16,7 @@
 
         private void OnClicked()
         {
-            var income = _incomeProvider.GetIncome();
+            var income = _incomeProvider.Income;
             _wallet.AddMoney(income);
         }
     }

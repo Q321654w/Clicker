@@ -19,8 +19,8 @@ namespace DefaultNamespace
             _product = product;
             _numberFormatter = numberFormatter;
 
-            _countText.text = $"{_shop.GetCountOf(product.ProductId)}";
-            _priceText.text = $"{_numberFormatter.FormatToString(_product.Price.GetPrice())}";
+            OnProductSold(_product);
+            OnPriceChanged(_product.Price.GetPrice());
             _customButton.Initialize(_product.Name);
 
             _shop.ProductSold += OnProductSold;
@@ -43,7 +43,8 @@ namespace DefaultNamespace
 
         private void OnPriceChanged(Number number)
         {
-            _priceText.text = $"{_numberFormatter.FormatToString(number)}";
+            var formatedNumber = _numberFormatter.FormatToString(number);
+            _priceText.text = $"{formatedNumber}";
         }
 
         private void OnClicked()
