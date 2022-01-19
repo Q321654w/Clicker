@@ -1,8 +1,5 @@
-﻿using System;
-
-namespace DefaultNamespace
+﻿namespace DefaultNamespace
 {
-    [Serializable]
     public class Manufacture
     {
         private readonly string _id;

@@ -155,12 +155,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _uiInstaller: {fileID: 250957320}
   _gameUpdates: {fileID: 564895742}
-  _productDataBase: {fileID: 11400000, guid: 77ffe82113cb5874aa327a69eab9e99f, type: 2}
+  _productDataBase: {fileID: 11400000, guid: 23c90943cf4bc1e4a802a268f700bae4, type: 2}
   _manufactureDataBase: {fileID: 11400000, guid: 6bd039ed49134ca0b3f2912911ba4b77, type: 2}
-  _clickMoneyProviderId: Click
   _multiplyBuffConfigs:
   - {fileID: 11400000, guid: 8d1ac6c41cf98eb4ca270468924322d1, type: 2}
-  _buffIdContext: Buffs
+  _clickMoneyProviderId: Click
   _multiplyIdContext: MultiplyBuffs
   _manufactureIdContext: Manufactures
 --- !u!4 &250957319

@@ -19,13 +19,13 @@ namespace DefaultNamespace
             _product = product;
             _numberFormatter = numberFormatter;
 
-            OnProductSold(_product);
-            OnPriceChanged(_product.Price.GetPrice());
+            OnProductSold(product);
+            OnPriceChanged(product.Price.GetPrice());
             _customButton.Initialize(_product.Name);
 
             _shop.ProductSold += OnProductSold;
             _product.Price.PriceChanged += OnPriceChanged;
-            _customButton.Clicked += OnClicked;
+            _customButton.Pressed += OnPressed;
         }
 
         private void OnProductSold(Product product)
@@ -43,11 +43,10 @@ namespace DefaultNamespace
 
         private void OnPriceChanged(Number number)
         {
-            var formatedNumber = _numberFormatter.FormatToString(number);
-            _priceText.text = $"{formatedNumber}";
+            _priceText.text = $"{_numberFormatter.FormatToString(number)}";
         }
 
-        private void OnClicked()
+        private void OnPressed()
         {
             _shop.Buy(_product.ProductId);
         }
@@ -56,7 +55,7 @@ namespace DefaultNamespace
         {
             _shop.ProductSold -= OnProductSold;
             _product.Price.PriceChanged -= OnPriceChanged;
-            _customButton.Clicked -= OnClicked;
+            _customButton.Pressed -= OnPressed;
         }
     }
 }

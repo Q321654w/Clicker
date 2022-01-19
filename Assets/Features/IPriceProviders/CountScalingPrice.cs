@@ -3,7 +3,6 @@ using UnityEngine;
 
 namespace DefaultNamespace
 {
-    [Serializable]
     public class CountScalingPrice : IPriceProvider
     {
         public event Action<Number> PriceChanged;
@@ -42,11 +41,6 @@ namespace DefaultNamespace
         public Number GetPrice()
         {
             return _price;
-        }
-
-        public PriceProviderData GetData()
-        {
-            return new PriceProviderData(_itemId, _basePrice);
         }
     }
 }

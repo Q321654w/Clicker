@@ -13,12 +13,6 @@ namespace DefaultNamespace.ProductProviders
             _factory = factory;
             _products = factory.CreateAll();
         }
-        
-        public ProductProvider(ProductFactory factory, ProductProviderData data)
-        {
-            _factory = factory;
-            _products = factory.CreateAll(data.ProductDatas);
-        }
 
         public Product GetProduct(ProductId id)
         {
@@ -33,18 +27,6 @@ namespace DefaultNamespace.ProductProviders
         public IEnumerable<Product> GetAllProducts()
         {
             return _products;
-        }
-
-        public ProductProviderData GetData()
-        {
-            var datas = new List<ProductData>();
-
-            foreach (var product in _products)
-            {
-                datas.Add(product.GetData());
-            }
-
-            return new ProductProviderData(datas);
         }
     }
 }

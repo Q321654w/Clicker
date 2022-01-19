@@ -6,7 +6,5 @@ namespace DefaultNamespace
     {
         event Action<Number> PriceChanged;
         Number GetPrice();
-
-        PriceProviderData GetData();
     }
 }

@@ -2,17 +2,11 @@
 
 namespace DefaultNamespace
 {
-    [Serializable]
     public class Wallet
     {
         public event Action<Number> MoneyCountChanged;
 
         public Number Money { get; private set; }
-
-        public Wallet()
-        {
-            Money = new Number(0,0);
-        }
 
         public Wallet(Number money)
         {
@@ -34,11 +28,6 @@ namespace DefaultNamespace
             MoneyCountChanged?.Invoke(Money);
 
             return true;
-        }
-
-        public WalletData GetData()
-        {
-            return new WalletData(Money);
         }
     }
 }

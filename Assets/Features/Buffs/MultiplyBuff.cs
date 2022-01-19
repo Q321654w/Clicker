@@ -1,8 +1,5 @@
-﻿using System;
-
-namespace DefaultNamespace
+﻿namespace DefaultNamespace
 {
-    [Serializable]
     public class MultiplyBuff : IBuff
     {
         private readonly int _multiplier;

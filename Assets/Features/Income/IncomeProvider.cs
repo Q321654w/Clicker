@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace DefaultNamespace
 {
@@ -11,14 +12,21 @@ namespace DefaultNamespace
         private readonly List<IBuff> _buffs;
 
         public Number Income { get; private set; }
-        
-        public IncomeProvider(IncomeProviderData data)
+
+        public IncomeProvider(IEnumerable<Manufacture> manufactures)
         {
-            _manufactures = data.Manufactures;
-            _buffs = data.Buffs;
+            _manufactures = manufactures.ToList();
+            _buffs = new List<IBuff>();
             CalculateIncome();
         }
-
+        
+        public IncomeProvider(IEnumerable<Manufacture> manufactures, IEnumerable<IBuff> buffs)
+        {
+            _manufactures = manufactures.ToList();
+            _buffs = buffs.ToList();
+            CalculateIncome();
+        }
+        
         public void AddManufacture(Manufacture manufacture)
         {
             _manufactures.Add(manufacture);
@@ -69,11 +77,6 @@ namespace DefaultNamespace
         public void CleanUp()
         {
             IncomeChanged = null;
-        }
-
-        public IncomeProviderData GetData()
-        {
-            return new IncomeProviderData(_manufactures, _buffs);
         }
     }
 }

@@ -6,7 +6,7 @@ namespace DefaultNamespace
     public class ShopView : MonoBehaviour, ICleanUp
     {
         [SerializeField] private ProductView _productViewPrefab;
-        [SerializeField] private RectTransform _content;
+        [SerializeField] private Transform _content;
 
         private List<ProductView> _productViews;
         private Shop _shop;
@@ -19,7 +19,7 @@ namespace DefaultNamespace
             foreach (var product in products)
             {
                 var productView = Instantiate(_productViewPrefab, _content);
-                productView.Initialize(numberFormatter, product, shop);
+                productView.Initialize(numberFormatter, product, _shop);
                 _productViews.Add(productView);
             }
         }

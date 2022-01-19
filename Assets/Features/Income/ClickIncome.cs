@@ -1,6 +1,6 @@
 ﻿namespace DefaultNamespace
 {
-    public class ClickIncome
+    public class ClickIncome : ICleanUp
     {
         private readonly Wallet _wallet;
         private readonly CustomButton _button;
@@ -11,13 +11,18 @@
             _wallet = wallet;
             _button = button;
             _incomeProvider = incomeProvider;
-            _button.Clicked += OnClicked;
+            _button.Pressed += OnPressed;
         }
 
-        private void OnClicked()
+        private void OnPressed()
         {
             var income = _incomeProvider.Income;
             _wallet.AddMoney(income);
+        }
+
+        public void CleanUp()
+        {
+            _button.Pressed -= OnPressed;
         }
     }
 }

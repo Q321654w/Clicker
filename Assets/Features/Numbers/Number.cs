@@ -44,7 +44,7 @@ namespace DefaultNamespace
             var radixInDegree = (int) Mathf.Pow(RADIX, Mathf.Abs(_radixDegree));
 
             _numeric *= radixInDegree;
-            _numeric = Math.Floor(_numeric);
+            _numeric = Math.Ceiling(_numeric);
             _numeric /= radixInDegree;
         }
 

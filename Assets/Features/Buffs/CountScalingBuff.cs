@@ -1,8 +1,5 @@
-﻿using System;
-
-namespace DefaultNamespace
+﻿namespace DefaultNamespace
 {
-    [Serializable]
     public class CountScalingBuff : IBuff
     {
         private readonly Inventory _inventory;

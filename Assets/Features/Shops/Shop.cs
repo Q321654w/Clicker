@@ -8,9 +8,9 @@ namespace DefaultNamespace
     {
         public event Action<Product> ProductSold;
 
-        [NonSerialized] private readonly ProductProvider _productProvider;
-        [NonSerialized] private readonly Inventory _inventory;
-        [NonSerialized] private readonly Wallet _wallet;
+        private readonly ProductProvider _productProvider;
+        private readonly Inventory _inventory;
+        private readonly Wallet _wallet;
         private readonly Dictionary<ProductId, int> _catalog;
 
         public Shop(Inventory inventory, ProductProvider productProvider, Wallet wallet, Dictionary<ProductId, int> catalog)
@@ -51,11 +51,6 @@ namespace DefaultNamespace
         public void CleanUp()
         {
             ProductSold = null;
-        }
-
-        public ShopData GetData()
-        {
-            return new ShopData(_catalog);
         }
     }
 }

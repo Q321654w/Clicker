@@ -15,9 +15,14 @@ namespace DefaultNamespace
 
         public Ui Install(Wallet wallet, Shop shop, ProductProvider productProvider, IncomeProvider incomeProvider)
         {
+            return CreateUi(wallet, shop, productProvider, incomeProvider);
+        }
+
+        private Ui CreateUi(Wallet wallet, Shop shop, ProductProvider productProvider, IncomeProvider incomeProvider)
+        {
             var canvas = Instantiate(_canvasPrefab);
             var scoreView = Instantiate(_scoreViewPrefab, canvas.transform);
-            scoreView.Initialize(wallet, _numberFormatter, incomeProvider);
+            scoreView.Initialize(incomeProvider,wallet, _numberFormatter);
 
             ClickButton = Instantiate(_clickButtonPrefab, canvas.transform);
 

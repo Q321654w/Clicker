@@ -1,6 +1,6 @@
 ﻿namespace DefaultNamespace
 {
-    public class InventoryBuffMediator
+    public class InventoryBuffMediator : ICleanUp
     {
         private readonly Inventory _inventory;
         private readonly IncomeProvider _incomeProvider;
@@ -21,6 +21,11 @@
             
             var buff = _factoryFacade.Create(id);
             _incomeProvider.AddBuff(buff);
+        }
+
+        public void CleanUp()
+        {
+            _inventory.ItemAdded -= OnItemAdded;
         }
     }
 }

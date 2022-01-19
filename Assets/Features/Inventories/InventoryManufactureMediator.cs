@@ -1,6 +1,6 @@
 ﻿namespace DefaultNamespace
 {
-    public class InventoryManufactureMediator
+    public class InventoryManufactureMediator : ICleanUp
     {
         private readonly IncomeProvider _incomeProvider;
         private readonly Inventory _inventory;
@@ -21,6 +21,11 @@
             
             var manufacture = _manufactureFactory.Create(id);
             _incomeProvider.AddManufacture(manufacture);
+        }
+
+        public void CleanUp()
+        {
+            _inventory.ItemAdded -= OnItemAdded;
         }
     }
 }

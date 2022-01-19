@@ -9,15 +9,16 @@ namespace DefaultNamespace
         [SerializeField] private Text _moneyPerSecond;
 
         private NumberFormatter _numberFormatter;
+
         private IncomeProvider _incomeProvider;
         private Wallet _wallet;
 
-        public void Initialize(Wallet wallet, NumberFormatter numberFormatter, IncomeProvider incomeProvider)
+        public void Initialize(IncomeProvider incomeProvider, Wallet wallet, NumberFormatter numberFormatter)
         {
             _incomeProvider = incomeProvider;
             _numberFormatter = numberFormatter;
             _wallet = wallet;
-            
+
             OnIncomeChanged(incomeProvider.Income);
             OnMoneyCountChanged(wallet.Money);
 
@@ -33,8 +34,8 @@ namespace DefaultNamespace
 
         private void OnMoneyCountChanged(Number number)
         {
-            var formatedNumber = _numberFormatter.FormatToString(number);
-            _score.text = $"{formatedNumber}";
+            var message = _numberFormatter.FormatToString(number);
+            _score.text = $"{message}";
         }
 
         public void CleanUp()

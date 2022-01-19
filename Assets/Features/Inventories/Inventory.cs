@@ -3,12 +3,11 @@ using System.Collections.Generic;
 
 namespace DefaultNamespace
 {
-    [Serializable]
     public class Inventory : ICleanUp
     {
         public event Action<string> ItemAdded;
 
-        private List<string> _items;
+        private readonly List<string> _items;
 
         public Inventory(List<string> items)
         {
@@ -37,11 +36,6 @@ namespace DefaultNamespace
         public void CleanUp()
         {
             ItemAdded = null;
-        }
-
-        public InventoryData GetData()
-        {
-            return new InventoryData(_items);
         }
     }
 }

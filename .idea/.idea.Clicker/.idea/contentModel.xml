@@ -8,8 +8,6 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Features" t="Include">
-          <e p="AppStartup.cs" t="Include" />
-          <e p="BinarySaveSystem.cs" t="Include" />
           <e p="Buffs" t="Include">
             <e p="CountScalingBuff.cs" t="Include" />
             <e p="Factories" t="Include">
@@ -33,19 +31,14 @@
           <e p="Game" t="Include">
             <e p="Game.cs" t="Include" />
           </e>
-          <e p="GameData.cs" t="Include" />
-          <e p="GameDataProvider.cs" t="Include" />
-          <e p="GameLoadingOperation.cs" t="Include" />
           <e p="GameUpdate" t="Include">
             <e p="GameUpdates.cs" t="Include" />
             <e p="IGameUpdate.cs" t="Include" />
           </e>
-          <e p="ILoadingOperation.cs" t="Include" />
           <e p="Income" t="Include">
             <e p="ClickIncome.cs" t="Include" />
             <e p="ICleanUp.cs" t="Include" />
             <e p="IncomeProvider.cs" t="Include" />
-            <e p="IncomeProviderData.cs" t="Include" />
             <e p="PassiveIncome.cs" t="Include" />
           </e>
           <e p="Installers" t="Include">
@@ -55,16 +48,12 @@
           <e p="Inventories" t="Include">
             <e p="Inventory.cs" t="Include" />
             <e p="InventoryBuffMediator.cs" t="Include" />
-            <e p="InventoryData.cs" t="Include" />
             <e p="InventoryManufactureMediator.cs" t="Include" />
           </e>
           <e p="IPriceProviders" t="Include">
             <e p="CountScalingPrice.cs" t="Include" />
             <e p="IPriceProvider.cs" t="Include" />
-            <e p="PriceProviderData.cs" t="Include" />
           </e>
-          <e p="ISaveSystem.cs" t="Include" />
-          <e p="LoadingScreen.cs" t="Include" />
           <e p="Manufactures" t="Include">
             <e p="Factories" t="Include">
               <e p="DataBases" t="Include">
@@ -75,7 +64,6 @@
             </e>
             <e p="Manufacture.cs" t="Include" />
           </e>
-          <e p="Mapper.cs" t="Include" />
           <e p="Numbers" t="Include">
             <e p="Number.cs" t="Include" />
             <e p="NumberFormatter.cs" t="Include" />
@@ -96,11 +84,9 @@
                   <e p="ProductFactory.cs" t="Include" />
                 </e>
                 <e p="ProductProvider.cs" t="Include" />
-                <e p="ProductProviderData.cs" t="Include" />
               </e>
             </e>
             <e p="Shop.cs" t="Include" />
-            <e p="ShopData.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
             <e p="CharIntPair.cs" t="Include" />
@@ -111,7 +97,6 @@
           </e>
           <e p="Wallets" t="Include">
             <e p="Wallet.cs" t="Include" />
-            <e p="WalletData.cs" t="Include" />
           </e>
         </e>
       </e>

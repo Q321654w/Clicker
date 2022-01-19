@@ -8,8 +8,6 @@ namespace DefaultNamespace
         private ScoreView _scoreView;
         private ShopView _shopView;
 
-        public Canvas Canvas => _canvas;
-
         public Ui(ScoreView scoreView, ShopView shopView, Canvas canvas)
         {
             _scoreView = scoreView;

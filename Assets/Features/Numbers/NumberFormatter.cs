@@ -1,10 +1,8 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using UnityEngine;
 
 namespace DefaultNamespace
 {
-    [Serializable]
     [CreateAssetMenu(menuName = "NumberFormatter")]
     public class NumberFormatter : ScriptableObject
     {

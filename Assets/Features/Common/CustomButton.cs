@@ -9,7 +9,7 @@ namespace DefaultNamespace
     {
         [SerializeField] private Text _text;
 
-        public event Action Clicked;
+        public event Action Pressed;
 
         public void Initialize(string text)
         {
@@ -18,7 +18,7 @@ namespace DefaultNamespace
 
         public void OnPointerDown(PointerEventData eventData)
         {
-            Clicked?.Invoke();
+            Pressed?.Invoke();
         }
     }
 }
